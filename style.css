@@ -152,6 +152,7 @@ body {
 }
 .header .container .header-wrapper .header__right .header__lang a:hover {
   color: #00B871;
+  text-decoration: none;
 }
 .header .container .header-wrapper .header__right .header__lang a:active {
   color: #004B2E;
@@ -270,4 +271,52 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   white-space: nowrap;
+}
+
+.section-1 .section-1__main-info {
+  color: #333;
+}
+.section-1 .section-1__main-info .main-info__heading {
+  font-family: 'Minion pro';
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.section-1 .section-1__main-info .main-info__sub-text {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.section-1 .section-1__main-info .main-info__button {
+  background-color: #00814F;
+  width: 204px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: none;
+}
+.section-1 .section-1-wrapper .section-1__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-1 .section-1-wrapper .section-1__info .section-1__video {
+  margin-right: -230px;
+  position: relative;
+}
+.section-1 .section-1-wrapper .section-1__info .section-1__video svg {
+  position: absolute;
+  top: 214px;
+  right: 315.08px;
+}
+.section-1 .section-1-wrapper .scroll {
+  margin: 0 auto;
+  display: block;
 }

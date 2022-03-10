@@ -150,6 +150,7 @@ body {
 
                     a:hover {
                         color: #00B871;
+                        text-decoration: none;
                     }
 
                     a:active {
@@ -262,6 +263,63 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+.section-1 {
+
+    .section-1__main-info {
+        color: #333;
+
+        .main-info__heading {
+            font-family: 'Minion pro';
+            font-size: 40px;
+            line-height: 48/40 * 100%;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .main-info__sub-text {
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 30/20 * 100%;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .main-info__button {
+            background-color: #00814F;
+            width: 204px;
+            height: 45px;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+            border: none;
+        }
+    }
+
+    .section-1-wrapper {
+
+        .section-1__info {
+            display: flex;
+            align-items: center;
+
+            .section-1__video {
+                margin-right: -230px;
+                position: relative;
+    
+                svg {
+                    position: absolute;
+                    top: 214px;
+                    right: 315.08px;
+                }
+            }
+        }
+
+        .scroll {
+            margin: 0 auto;
+            display: block;
         }
     }
 }
