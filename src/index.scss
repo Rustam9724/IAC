@@ -15,7 +15,7 @@ $text-color: #333333;
 
 @import "./styles/header.scss";
 @import './styles/wellcome-section.scss';
-
+@import './styles/range.scss';
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
@@ -65,7 +65,7 @@ html, body {
   font-family: sans-serif;
   font-size: 1.6rem;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   display: block;
   display: flex;
   min-height: 45px;
@@ -74,5 +74,16 @@ html, body {
 
   &:hover {
     background-color: #005c39;
+  }
+
+  &.button_transpared {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid $accent-color;
+    color: $accent-color;
+
+    &:hover {
+      background-color: $accent-color;
+      color: white;
+    }
   }
 }

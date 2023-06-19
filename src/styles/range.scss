@@ -1,0 +1,110 @@
+.range {
+    padding: 225px 0 249px;
+    background-image: url("../../public/assets/range/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .range__container {
+
+        .range__body {
+            display: flex;
+            column-gap: 60px;
+            margin-bottom: 60px;
+            
+            .range__descripton {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 30/20 * 100%;
+                color: $accent-color;
+                
+                h2 {
+                    font-weight: 700;
+                    font-size: 3rem;
+                    line-height: 35.16/30 * 100%;
+                    color: $text-color;
+
+                    &:not(:last-child) {
+                        margin-bottom: 73px;
+                    }
+                }
+
+                .range__list {
+                    
+                    .range__list__item {
+                        padding-left: 32px;
+                        background-image: url("../../public/assets/range/list-circle.jpg");
+                        background-repeat: no-repeat;
+                        background-position-y: 50%;
+                        margin-bottom: 72px;
+
+                        &:not(:last-child) {
+                            margin-bottom: 22px;
+                        }
+                    }
+
+                }
+
+                & > p {
+                    max-width: 382px;
+                    margin-bottom: 30px;
+                }
+
+                .range__buttons {
+                    display: flex;
+                    column-gap: 20px;
+
+                    .range__button {
+                        width: 270px;
+                    }
+                }
+            }
+
+            .range__carousel {
+                display: flex;
+                column-gap: 30px;
+            }
+        }
+
+        .range__switcher {
+            display: flex;
+            column-gap: 128px;
+            align-items: center;
+
+            .range__arrows {
+                display: flex;
+                column-gap: 10px;
+
+                .switcher-range__arrow:last-child {
+                    transform: rotate(180deg);
+                }
+
+                .switcher-range__arrow_active {
+                    cursor: pointer;
+                    
+                    g {
+                        opacity: 1;
+                    }
+                    rect {
+                        fill: $accent-color;
+                    }
+                }
+            }
+
+            .switcher-range__scale {
+                height: 2px;
+                width: 1062px;
+                background-color: #c4c4c4;
+                display: flex;
+
+                .switcher-range__scale__item {
+                    height: 100%;
+                    flex: 0 0 20%;
+                }
+
+                .switcher-range__scale__item_active {
+                    background-color: $accent-color;
+                }
+            }
+        }
+    }
+}
