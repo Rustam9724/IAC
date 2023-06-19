@@ -1,0 +1,58 @@
+$secondary-text-color: #666666;
+$accent-color: #00814F;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600);
+@font-face {
+  font-family: 'Nirmala UI';
+  src: url("./assets/fonts/Nirmala\ ui.ttf");
+}
+@font-face {
+  font-family: "Minion Pro";
+  src: url("./assets/fonts/MinionPro-Regular.otf");
+}
+
+@import "./styles.scss/header.scss";
+
+
+*, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 10px;
+  color: #000;
+  font-family: Roboto;
+  background-color: white;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
