@@ -1,18 +1,20 @@
 $secondary-text-color: #666666;
 $accent-color: #00814F;
+$text-color: #333333;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600);
 @font-face {
   font-family: 'Nirmala UI';
-  src: url("./assets/fonts/Nirmala\ ui.ttf");
+  src: url("./assets/fonts/Nirmala-ui.otf");
 }
 @font-face {
   font-family: "Minion Pro";
   src: url("./assets/fonts/MinionPro-Regular.otf");
 }
 
-@import "./styles.scss/header.scss";
+@import "./styles/header.scss";
+@import './styles/wellcome-section.scss';
 
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
@@ -55,4 +57,22 @@ html, body {
 ._container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.button {
+  background-color: $accent-color;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  display: block;
+  display: flex;
+  min-height: 45px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #005c39;
+  }
 }

@@ -1,0 +1,105 @@
+.wellcome-section {
+    padding: 16px 0 176px;
+    margin: 0 -15px;
+    color: $text-color;
+    font-weight: 400;
+
+    .wellcome-section__container {
+        display: flex;
+        column-gap: 53px;
+        align-items: center;
+        width: 1280/1920 * 100%;
+
+        .wellcome-section__description {
+            
+            h1 {
+                font-family: "Minion Pro";
+                font-size: 4rem;
+                line-height: 48/40 * 100%;
+                width: 709px;
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            
+
+            p {
+                font-size: 2rem;
+                line-height: 30/20 * 100%;
+                width: 474px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .wellcome-section__button {
+                width: 204px;
+            }
+
+            @media (max-width: 767px) {
+                .wellcome-section__button {
+                    width: 280px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        @media (max-width: 749px) {
+            .wellcome-section__description {
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 3rem;
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .wellcome-section__video {
+            width: 746/1280 * 100%;
+            aspect-ratio: 746/548;
+            position: relative;
+            cursor: pointer;
+
+            .wellcome-section__video__preview {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            .wellcome-section__video__play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @media (max-width: 1120px) {
+            .wellcome-section__video {
+                width: 90%;
+                aspect-ratio: 280/205.62;
+            }
+        }
+    }
+
+    @media (max-width: 1749px) {
+        .wellcome-section__container {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 1120px) {
+        .wellcome-section__container {
+            width: 80%;
+        }
+    }
+}
