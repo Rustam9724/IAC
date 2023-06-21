@@ -1,6 +1,7 @@
 import WellcomeSection from "./WellcomeSection";
 import Range from "./Range";
 import Sertificates from "./Sertificates";
+import Clients from "./Clients";
 
 function Main() {
     return (
@@ -8,6 +9,7 @@ function Main() {
             <WellcomeSection />
             <Range />
             <Sertificates />
+            <Clients />
         </div>
     )
 }

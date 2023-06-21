@@ -4,7 +4,7 @@ function WellcomeSection() {
             <div className="wellcome-section__container _container">
                 <div className="wellcome-section__description">
                     <h1>Промышленное оборудование <br /> в странах СНГ с пожизненной гарантией</h1>
-                    <p>Оформите заказ и получите в подарок: запчасти, средства по уходу или Kärcher</p>
+                    <p className="description__text text">Оформите заказ и получите в подарок: запчасти, средства по уходу или Kärcher</p>
                     <a className="wellcome-section__button button">ОФОРМИТЬ ЗАКАЗ</a>
                 </div>
                 <div className="wellcome-section__video">
