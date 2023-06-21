@@ -102,4 +102,16 @@
             width: 80%;
         }
     }
+
+    @media (max-width: 574px) {
+        .wellcome-section__container {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 574px) {
+    .wellcome-section {
+        padding-bottom: 49px;
+    }  
 }
