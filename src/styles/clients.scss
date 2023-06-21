@@ -1,0 +1,114 @@
+.clients {
+    padding: 341px 0;
+    background-image: url("../../public/assets/clients/background.jpg");
+    background-size: cover;
+
+    .clients__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .clients__description {
+
+            & > *:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            
+            h2 {
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 30/16 * 100%;
+                color: $text-color;
+            }
+
+            .clients__text {
+                max-width: 403px;
+            }
+
+            .button {
+                width: 247px;
+            }
+
+            @media (max-width: 649px) {
+                h2 {
+                    font-weight: 1.8rem;
+                    margin-bottom: 16px;
+                }
+
+                .clients__text {
+                    font-size: 1.4rem;
+                    margin-bottom: 10px;
+                }
+
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+
+        .clients__items {
+            display: flex;
+            justify-content: space-between;
+            row-gap: 32px;
+            flex-wrap: wrap;
+            width: 624px;
+
+            .clients__item {
+                width: 188px;
+                padding: 65px 19px;
+                background-color: white;
+            }
+
+            @media (max-width: 649px) {
+                .clients__item {
+                    width: 136px;
+                    padding: 49px 16px;
+
+                    img {
+                        width: 104px;
+                        height: 39px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 649px) {
+            .clients__items {
+                width: 100%;
+                max-width: 543px;
+            }
+        }
+    }
+
+    @media (max-width: 1099px) {
+        .clients__container {
+            flex-direction: column;
+            row-gap: 57px;
+        }
+    }
+
+    @media (max-width: 449px) {
+        .clients__container {
+            width: 280/320 * 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .clients {
+        padding: 195px 0;
+    }
+}
+
+@media (max-width: 1099px) {
+    .clients {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 649px) {
+    .clients {
+        padding: 50px 0 64px;
+    }
+}
