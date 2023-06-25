@@ -1,0 +1,140 @@
+.stages {
+    padding: 122px 0 221px;
+    color: $text-color;
+
+    .stages__container {
+
+        .stages__title {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 35/30 * 100%;
+            color: $text-color;
+            margin-bottom: 85px;
+        }
+
+        .stages__body {
+
+            .stages__body__row {
+                display: flex;
+                justify-content: space-between;
+
+                .stages__stage {
+                    flex: 0 0 516px;
+                    position: relative;
+
+                    .stage__image {
+                        width: 283px;
+                        height: 283px;
+                        background-color: #F7F6F3;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .stage__description {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 337px;
+                        height: 191px;
+                        padding: 24px;
+                        box-shadow: 10px 20px 15px rgba(18, 95, 57, 0.1);
+                        z-index: 2;
+                        background-color: white;
+
+                        h3 {
+                            font-weight: 700;
+                            font-size: 2.4rem;
+                            line-height: 28/24 * 100%;
+
+                            &:not(:last-child) {
+                                margin-bottom: 12px;
+                            }
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 2rem;
+                            line-height: 3/2 * 100%;
+                        }
+                    }
+                }
+                
+                &.stages__body__row_reverse {
+                    flex-direction: row-reverse;
+                }
+
+                .stages__getstart {
+                    margin-right: 111/1280 * 100%;
+                    
+                    h2 {
+                        font-weight: 700;
+                        font-size: 3rem;
+                        line-height: 35/30 * 100%;
+                        margin-bottom: 35px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 30/20 * 100%;
+                        margin-bottom: 30px;
+                        max-width: 400px;
+                    }
+
+                    .stages__button {
+                        width: 182px;
+                    }
+                }
+            }
+
+            .term {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+
+                &.term_horizontal {
+                    flex: 0 1 254px;
+
+                    &.term_reverse {
+                        flex-direction: row-reverse;
+
+                        .term__arrow {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+
+                &.term_vertical {
+                    flex-direction: column;
+                    height: 180px;
+                    width: 180px;
+                    
+                    .term__arrow {
+                        transform: rotate(90deg);
+                    }
+                    
+                    &.term_vertical_right {
+                        margin-left: 816/1280 * 100%;
+                    }
+
+                    &.term_vertical_left {
+                        margin-left: 52/1280 * 100%;
+                    }
+
+                }
+
+                p {
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    line-height: 28/24 * 100%;
+
+                }
+            }
+        }
+    }
+}

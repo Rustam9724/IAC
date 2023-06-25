@@ -2,6 +2,7 @@ import WellcomeSection from "./WellcomeSection";
 import Range from "./Range";
 import Sertificates from "./Sertificates";
 import Clients from "./Clients";
+import Stages from "./Stages";
 
 function Main() {
     return (
@@ -10,6 +11,7 @@ function Main() {
             <Range />
             <Sertificates />
             <Clients />
+            <Stages />
         </div>
     )
 }
