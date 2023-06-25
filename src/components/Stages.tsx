@@ -15,12 +15,10 @@ function Stages() {
                             </div>
                         </div>
                         <div className="stages__body__term term term_horizontal">
-                            <div className="term__start">
-                                <img src="assets/stages/start.jpg" alt="" />
+                            <div className="term__arrow term__arrow_start">
                             </div>
                             <p>3 дня</p>
-                            <div className="term__end">
-                                <img src="assets/stages/end.jpg" alt="" />
+                            <div className="term__arrow term__arrow_end ">
                             </div>
                         </div>
                         <div className="stages__stage stage">
@@ -33,13 +31,11 @@ function Stages() {
                             </div>
                         </div>
                     </div>
-                    <div className="stages__body__term term term_vertical term_vertical">
+                    <div className="stages__body__term term term_vertical term_vertical_right">
                         <div className="term__arrow term__arrow_start">
-                            <img src="assets/stages/start.jpg" alt="" />
                         </div>
                         <p>7 дней</p>
                         <div className="term__arrow term__arrow_end">
-                            <img src="assets/stages/end.jpg" alt="" />
                         </div>
                     </div>
                     <div className="stages__body__row stages__body__row_reverse">
@@ -54,11 +50,9 @@ function Stages() {
                         </div>
                         <div className="stages__body__term term term_horizontal term_reverse">
                             <div className="term__arrow term__arrow_start">
-                                <img src="assets/stages/start.jpg" alt="" />
                             </div>
                             <p>3 дня</p>
                             <div className="term__arrow term__arrow_end">
-                                <img src="assets/stages/end.jpg" alt="" />
                             </div>
                         </div>
                         <div className="stages__stage stage">
@@ -73,14 +67,12 @@ function Stages() {
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_left">
                         <div className="term__arrow term__arrow_start">
-                            <img src="assets/stages/start.jpg" alt="" />
                         </div>
                         <p>3 дня</p>
                         <div className="term__arrow term__arrow_end">
-                            <img src="assets/stages/end.jpg" alt="" />
                         </div>
                     </div>
-                    <div className="stages__body__row ">
+                    <div className="stages__body__row">
                         <div className="stages__stage stage">
                             <div className="stage__image">
                                 <img src="/assets/stages/05.svg" alt="" />
@@ -92,11 +84,9 @@ function Stages() {
                         </div>
                         <div className="stages__body__term term term_horizontal">
                             <div className="term__arrow term__arrow_start">
-                                <img src="assets/stages/start.jpg" alt="" />
                             </div>
                             <p>1 день</p>
                             <div className="term__arrow term__arrow_end">
-                                <img src="assets/stages/end.jpg" alt="" />
                             </div>
                         </div>
                         <div className="stages__stage stage">
@@ -111,11 +101,9 @@ function Stages() {
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_right">
                         <div className="term__arrow term__arrow_start">
-                            <img src="assets/stages/start.jpg" alt="" />
                         </div>
                         <p>2 - 6 месяцев</p>
                         <div className="term__arrow term__arrow_end">
-                            <img src="assets/stages/end.jpg" alt="" />
                         </div>
                     </div>
                     <div className="stages__body__row stages__body__row_reverse">
@@ -130,11 +118,9 @@ function Stages() {
                         </div>
                         <div className="stages__body__term term term_horizontal term_reverse">
                             <div className="term__arrow term__arrow_start">
-                                <img src="assets/stages/start.jpg" alt="" />
                             </div>
                             <p>10 - 15 дней</p>
                             <div className="term__arrow term__arrow_end">
-                                <img src="assets/stages/end.jpg" alt="" />
                             </div>
                         </div>
                         <div className="stages__stage stage">
@@ -147,13 +133,11 @@ function Stages() {
                             </div>
                         </div>
                     </div>
-                    <div className="stages__body__term term term_vertical term_vertical_leftt">
+                    <div className="stages__body__term term term_vertical term_vertical_left">
                         <div className="term__arrow term__arrow_start">
-                            <img src="assets/stages/start.jpg" alt="" />
                         </div>
                         <p>30 дней</p>
                         <div className="term__arrow term__arrow_end">
-                            <img src="assets/stages/end.jpg" alt="" />
                         </div>
                     </div>
                     <div className="stages__body__row">
