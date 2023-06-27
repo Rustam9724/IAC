@@ -1,0 +1,119 @@
+.exhibitions {
+    padding: 0 0 80px;
+
+    .exhibitions__container {
+
+        h1 {
+            font-size: 3rem;
+            line-height: 35/30 * 100%;
+            font-weight: 700;
+            color: $text-color;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2.4rem;
+                margin-bottom: 29px;
+            }
+        }
+
+        @media (max-width: 543px) {
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 29px;
+            }
+        }
+
+        .exhibitions__body {
+            display: flex;
+            justify-content: space-between;
+
+            .exhibitions_left {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                width: 625/1280 * 100%;
+
+                .exhibitions__left__top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .exhibitions__left__top__first-image {
+                        width: 407/625 * 100%;
+                        aspect-ratio: 407/300;
+                    }
+
+                    .exhibitions__left__top__second-image {
+                        width: 188/625 * 100%;
+                        aspect-ratio: 300/188;
+                    }
+                }
+
+                .exhibitions__left__bottom {
+                    width: 100%;
+                    aspect-ratio: 625/300;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .exhibitions_left {
+                    width: 100%;
+                } 
+            }
+
+            .exhibitions__right {
+                width: 624/1280 * 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .exhibitions__right__left,
+                .exhibitions__right__right {
+                    width: 297/624 * 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+
+                    .exhibitions__right__left__first-image {
+                        width: 100%;
+                        aspect-ratio: 297/400;
+                    }
+
+                    .exhibitions__right__left__second-image {
+                        width: 100%;
+                        aspect-ratio: 297/200;
+                    }
+                }
+
+                .exhibitions__right__right {
+
+                    .exhibitions__right__right__first-image {
+                        width: 100%;
+                        aspect-ratio: 297/272;
+                    }
+
+                    .exhibitions__right__right__second-image {
+                        width: 100%;
+                        aspect-ratio: 297/328;
+                    }
+                }
+            }
+
+            @media (max-width: 767px) {
+                .exhibitions__right {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            .exhibitions__body {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                row-gap: 8px;
+            }
+        }
+    }
+}
