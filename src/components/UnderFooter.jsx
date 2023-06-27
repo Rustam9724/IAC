@@ -1,8 +1,14 @@
+import CallUp from "./CallUp";
 import Employers from "./Employers";
+import FAQ from "./FAQ";
 
 function UnderFooter() {
     return (
-        <Employers />
+        <>
+            <Employers />
+            <FAQ />
+            <CallUp />
+        </>
     )
 }
 
