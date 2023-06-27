@@ -3,6 +3,7 @@ import Range from "./Range";
 import Sertificates from "./Sertificates";
 import Clients from "./Clients";
 import Stages from "./Stages";
+import Exhibitions from "./Exhibitions";
 
 function Main() {
     return (
@@ -12,6 +13,7 @@ function Main() {
             <Sertificates />
             <Clients />
             <Stages />
+            <Exhibitions />
         </div>
     )
 }
