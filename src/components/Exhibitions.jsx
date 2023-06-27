@@ -6,21 +6,33 @@ function Exhibitions() {
                 <div className="exhibitions__body">
                     <div className="exhibitions_left">
                         <div className="exhibitions__left__top">
-                            <img src="/assets/exhibitions/left_top_left.jpg" alt="" />
-                            <img src="/assets/exhibitions/left_top_right.jpg" alt="" />
+                            <div className="exhibitions__left__top__first-image _ibg">
+                                <img src="/assets/exhibitions/left_top_left.jpg" alt="" />
+                            </div>
+                            <div className="exhibitions__left__top__second-image _ibg">
+                                <img src="/assets/exhibitions/left_top_right.jpg" alt="" />
+                            </div>
                         </div>
-                        <div className="exhibitions__left__bottom">
+                        <div className="exhibitions__left__bottom _ibg">
                             <img src="/assets/exhibitions/left_bottom.jpg" alt="" />
                         </div>
                     </div>
                     <div className="exhibitions__right">
                         <div className="exhibitions__right__left">
-                            <img src="/assets/exhibitions/right_left_top.jpg" alt="" />
-                            <img src="/assets/exhibitions/right_left_bottom.jpg" alt="" />
+                            <div className="exhibitions__right__left__first-image _ibg">
+                                <img src="/assets/exhibitions/right_left_top.jpg" alt="" />
+                            </div>
+                            <div className="exhibitions__right__left__second-image _ibg">
+                                <img src="/assets/exhibitions/right_left_bottom.jpg" alt="" />
+                            </div>
                         </div>
                         <div className="exhibitions__right__right">
-                            <img src="/assets/exhibitions/right_right_top.jpg" alt="" />
-                            <img src="/assets/exhibitions/right_right_bottom.jpg" alt="" />
+                            <div className="exhibitions__right__right__first-image _ibg">
+                                <img src="/assets/exhibitions/right_right_top.jpg" alt="" />
+                            </div>
+                            <div className="exhibitions__right__right__second-image _ibg">
+                                <img src="/assets/exhibitions/right_right_bottom.jpg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

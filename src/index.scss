@@ -19,6 +19,7 @@ $text-color: #333333;
 @import './styles/sertificates.scss';
 @import './styles/clients.scss';
 @import './styles/stages.scss';
+@import './styles/exhibitions.scss';
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
@@ -58,9 +59,9 @@ html, body {
 }
 
 ._container {
-  max-width: 1300px;
+  max-width: 1310px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .button {
@@ -96,4 +97,17 @@ html, body {
   font-weight: 400;
   font-size: 2rem;
   line-height: 3/2 * 100%;
+}
+
+._ibg {
+  position: relative;
+
+  img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0;
+      object-fit: cover;
+  }
 }
