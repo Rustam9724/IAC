@@ -20,6 +20,7 @@ $text-color: #333333;
 @import './styles/clients.scss';
 @import './styles/stages.scss';
 @import './styles/exhibitions.scss';
+@import './styles/employers.scss';
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
@@ -110,4 +111,9 @@ html, body {
       left: 0;
       object-fit: cover;
   }
+}
+
+.underfooter {
+  background-image: url("../public/assets/underfooter/background.jpg");
+  background-image: cover;
 }

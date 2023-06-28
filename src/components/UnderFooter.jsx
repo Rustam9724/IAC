@@ -4,11 +4,11 @@ import FAQ from "./FAQ";
 
 function UnderFooter() {
     return (
-        <>
+        <div className="underfooter">
             <Employers />
             <FAQ />
             <CallUp />
-        </>
+        </div>
     )
 }
 

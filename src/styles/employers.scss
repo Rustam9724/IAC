@@ -1,0 +1,115 @@
+.employers {
+    padding: 137px 0 150px;
+
+    .employers__container {
+
+        .employers__body {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .employers__image {
+                width: 625/1280 * 100%;
+                aspect-ratio: 1;
+                position: relative;
+
+                img,
+                div {
+                    width: 596/625 * 100%;
+                    aspect-ratio: 1;
+                }
+
+                img {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                div {
+                    background-color: #363636;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            .employers__text {
+                width: 625/1280 * 100%;
+                padding: 45px 0 60px;
+
+                h2 {
+                    font-size: 3rem;
+                    line-height: 35/30 * 100%;
+                    font-weight: 700;
+                    color: white;
+                    margin-bottom: 255px;
+                }
+
+                .employers__description {
+
+                    & > *:not(:last-child) {
+                        margin-bottom: 13px;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        line-height: 150%;
+                        font-weight: normal;
+                        color: $secondary-text-color;
+                    }
+
+                    p.employers__employer {
+                        font-weight: 700;
+                        font-size: 2.4rem;
+                        line-height: 28/24 * 100%;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .switcher-employers {
+            display: flex;
+            align-items: center;
+            column-gap: 128px;
+
+            .switcher-employers__arrows {
+                display: flex;
+                column-gap: 5px;
+
+                .switcher-employers__arrow {
+                    cursor: pointer;
+
+                    &:last-child {
+                        transform: rotate(180deg);
+                    }
+
+                    &.switcher-employers__arrow_active {
+                        g {
+                            opacity: 1;
+                        }
+                        rect {
+                            fill: $accent-color;
+                        }
+                    }
+                }
+            }
+            
+            .switcher-employers__scale {
+                width: 407px;
+                height: 2px;
+                display: flex;
+
+                .switcher-employers__scale__item {
+                    background-color: $secondary-text-color;
+                    width: 20%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    &.switcher-employers__scale__item_active {
+                        background-color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+}
