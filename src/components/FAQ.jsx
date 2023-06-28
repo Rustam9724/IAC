@@ -3,7 +3,7 @@ function FAQ() {
         <section className="page__faq faq">
             <div className="faq__container _container">
                 <h2>Часто задаваемые вопросы</h2>
-                <p className="faq__subtitle"></p>
+                <p className="faq__subtitle">Здесь мы собрали для вас ответы на самые часто задаваемые вопросы</p>
                 <div className="faq__body">
                     <div className="faq__question">
                         <h3>Форма оплаты</h3>
