@@ -78,6 +78,12 @@
                 }
             }
 
+            @media (max-width: 1124px) {
+                .call-up__labels {
+                    margin-bottom: 22px;
+                }  
+            }
+
             .time-form {
 
                 p {
@@ -122,7 +128,89 @@
             }
         }
     }
+
+    @media (max-width: 999px) {
+        .call-up__container {
+            align-items: flex-start;
+        }
+    }
 }
 
-.button {
+@media (max-width: 767px) {
+    .call-up {
+        padding: 50px 0 50px;
+    
+        .call-up__container {
+            flex-direction: column;
+            row-gap: 30px;
+            
+            .call-up__map {
+                width: 100%;
+    
+                .call-up__map__image {
+                    width: 267/280 * 100%;
+    
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .call-up__map__substrate {
+                    width: 267/280 * 100%;
+                }
+            } 
+    
+            .call-up__form {
+                width: 100%;
+    
+                h2 {
+                    font-size: 2.4rem;
+                    margin-bottom: 13px;
+                }
+    
+                .call-up__labels {
+                    margin-bottom: 20px;
+    
+                    label {
+    
+                        &:not(:last-child) {
+                            margin-bottom: 11px;
+                        }
+                    }
+                }
+    
+                .time-form {
+
+                    .time-form__selects {
+                        width: 225px;
+
+                        select {
+                            width: 95px;
+                            height: 41px;
+                            padding: 10px;
+                            background-size: 41px 41px;
+                            font-size: 1.4rem;
+                        }
+                    }
+    
+                    .call-up__button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: 999px) {
+            .call-up__container {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .call-up__container {
+                align-items: center;
+            }
+        }
+    }
 }
