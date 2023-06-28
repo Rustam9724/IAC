@@ -1,8 +1,8 @@
 function CallUp() {
     return <section className="page__call-up call-up">
         <div className="call-up__container _container">
-            <div className="call-up__map _ibg">
-                <div style={{position: 'relative', overflow: 'hidden'}}>
+            <div className="call-up__map">
+                <div className="call-up__map__image" style={{position: 'relative', overflow: 'hidden'}}>
                     <a 
                         href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
                         style={{color: '#eee', fontSize: '12px', position: 'absolute', top: '0px'}}>
@@ -21,17 +21,20 @@ function CallUp() {
                         style={{position: 'relative'}}>
                     </iframe>
                 </div>
+                <div className="call-up__map__substrate"></div>
             </div>
             <form className="call-up__form">
                 <h2>Давайте созвонимся</h2>
-                <label>
-                    <p>Фамилия Имя</p>
-                    <input type="text"/>
-                </label>
-                <label>
-                    <p>Номер телефона</p>
-                    <input type="number" value="+998 90"/>
-                </label>
+                <div className="call-up__labels">
+                    <label>
+                        <p>Фамилия Имя</p>
+                        <input type="text" placeholder="Фамилия Имя"/>
+                    </label>
+                    <label>
+                        <p>Номер телефона</p>
+                        <input type="phone"/>
+                    </label>
+                </div>
                 <div className="call-up__form__time time-form">
                     <p>В какое время в течение дня вам удобно разговаривать?</p>
                     <div className="time-form__selects">
@@ -83,7 +86,7 @@ function CallUp() {
                             <option>18:00</option>
                         </select>
                     </div>
-                    <button className="button">Заказать обратный звонок</button>
+                    <button className="call-up__button button">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
                 </div>
             </form>
         </div>

@@ -1,0 +1,128 @@
+.call-up {
+    padding: 180px 0 69px;
+
+    .call-up__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .call-up__map {
+            width: 625/1280 * 100%;
+            aspect-ratio: 1;
+            position: relative;
+
+            .call-up__map__image {
+                width: 597/625 * 100%;
+                aspect-ratio: 1;
+                z-index: 1;
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .call-up__map__substrate {
+                position: absolute;
+                width: 597/625 * 100%;
+                aspect-ratio: 1;
+                bottom: 0;
+                right: 0;
+                background-color: #363636;
+            }
+        } 
+
+        .call-up__form {
+            width: 625/1280 * 100%;
+
+            h2 {
+                font-size: 3rem;
+                line-height: 35/30 * 100%;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 29px;
+            }
+
+            .call-up__labels {
+                margin-bottom: 52px;
+
+                label {
+                    display: block;
+
+                    &:not(:last-child) {
+                        margin-bottom: 22px;
+                    }
+    
+                    p {
+                        font-size: 2rem;
+                        line-height: 150%;
+                        color: $secondary-text-color;
+                    }
+    
+                    input {
+                        width: 100%;
+                        height: 64px;
+                        outline: none;
+                        background-color: #363636;
+                        padding: 20px 10/325 * 100%;
+                        color: white;
+                        font-size: 1.8rem;
+                        line-height: 150%;
+                        font-family: "Nirmal UI";
+    
+                        &::placeholder {
+                            font-size: 1.6rem;
+                            color: $secondary-text-color;
+                        }
+                    }
+                }
+            }
+
+            .time-form {
+
+                p {
+                    font-size: 2rem;
+                    color: $secondary-text-color;
+                    line-height: 23/20 * 100%;
+                    margin-bottom: 17px;
+                }
+                
+                .time-form__selects {
+                    width: 354px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px ;
+
+                    select {
+                        width: 145px;
+                        height: 61px;
+                        background-color: #363636;
+                        appearance: none;
+                        padding: 20px;
+                        -moz-appearance: none;
+                        -webkit-appearance: none;
+                        font-size: 1.8rem;
+                        line-height: 21/18 * 100%;
+                        color: white;
+                        background-image: url("../../public/assets/call-up/arrow.jpg");
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .call-up__button {
+                    width: 301px;
+                }
+            }
+        }
+    }
+}
+
+.button {
+}
