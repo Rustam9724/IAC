@@ -13,7 +13,7 @@ $text-color: #333333;
   src: url("./assets/fonts/MinionPro-Regular.otf");
 }
 
-@import "./styles/header.scss";
+@import './styles/header.scss';
 @import './styles/wellcome-section.scss';
 @import './styles/range.scss';
 @import './styles/sertificates.scss';
@@ -22,7 +22,8 @@ $text-color: #333333;
 @import './styles/exhibitions.scss';
 @import './styles/employers.scss';
 @import './styles/faq.scss';
-@import "./styles/call-up.scss";
+@import './styles/call-up.scss';
+@import './styles/footer.scss';
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;

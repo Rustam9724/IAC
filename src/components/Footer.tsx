@@ -1,17 +1,20 @@
 function Footer() {
     return (
         <footer className="footer">
-            <div className="footer__container">
-                <div className="footer__logo">
-                    <img src="/assets/footer/logo.jpg" alt="logo" />
+            <div className="footer__container _container">
+                <div className="footer__logo _ibg">
+                    <img src="/assets/footer/logo.svg" alt="logo" />
                 </div>
                 <div className="footer__contacts">
-                    <div className="footer__contacts__left">
-                        <p>ул. Узбекистон Овози, 21 Ташкент, Узбекистан 100007</p>
-                        <p>+998 99 999 99 99</p>
-                    </div>
-                    <div className="footer__contacts__right">
-                        <p>info@iac.uz</p>
+                    <h2>Контакты</h2>
+                    <div className="footer__contacts__body">
+                        <div className="footer__contacts__left">
+                            <p>ул. Узбекистон Овози, 21 Ташкент, Узбекистан 100007</p>
+                        </div>
+                        <div className="footer__contacts__right">
+                            <p>+998 99 999 99 99</p>
+                            <p>info@iac.uz</p>
+                        </div>
                     </div>
                 </div>
                 <div className="footer__social-media">
