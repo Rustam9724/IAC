@@ -5,6 +5,7 @@ import Clients from "./Clients";
 import Stages from "./Stages";
 import Exhibitions from "./Exhibitions";
 import UnderFooter from "./UnderFooter";
+import Footer from "./Footer";
 
 function Main() {
     return (
@@ -16,6 +17,7 @@ function Main() {
             <Stages />
             <Exhibitions />
             <UnderFooter />
+            <Footer />
         </div>
     )
 }
