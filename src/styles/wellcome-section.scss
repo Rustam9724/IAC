@@ -1,33 +1,64 @@
 .wellcome-section {
     padding: 16px 0 176px;
-    margin: 0 -15px;
-    color: $text-color;
-    font-weight: 400;
 
     .wellcome-section__container {
         display: flex;
-        column-gap: 53px;
         align-items: center;
-        width: 1280/1920 * 100%;
+        column-gap: 53px;
 
         .wellcome-section__description {
-            
-            h1 {
-                font-family: "Minion Pro";
-                font-size: 4rem;
-                line-height: 48/40 * 100%;
-                width: 709px;
+            width: 709/1280 * 100%;
 
-                &:not(:last-child) {
+            h1 {
+                font-size: 4rem;
+                line-height: 49/40 * 100%;
+                margin-bottom: 12px;
+                font-family: 'Minion Pro';
+                min-width: 709px;
+            }
+
+            @media (max-width: 1749px) {
+                h1 {
+                    min-width: 532px;
+                }
+            }
+
+            @media (max-width: 1149px) {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            @media (max-width: 599px) {
+                h1 {
+                    font-size: 2.5rem;
                     margin-bottom: 12px;
                 }
             }
 
-            .description__text {
-                width: 474px;
+            @media (max-width: 499px) {
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 12px;
+                    width: 100%;
+                    min-width: unset;
+                }
+            }
 
-                &:not(:last-child) {
-                    margin-bottom: 20px;
+            .description__text {
+                max-width: 474px;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 499px) {
+                .description__text {
+                    font-size: 1.7rem;
+                }
+            }
+
+            @media (max-width: 352px) {
+                .description__text {
+                    font-size: 1.4rem;
                 }
             }
 
@@ -37,77 +68,136 @@
 
             @media (max-width: 767px) {
                 .wellcome-section__button {
-                    width: 280px;
-                    margin: 0 auto;
-                }
+                    width: 100%;
+                } 
             }
         }
 
-        @media (max-width: 749px) {
+        @media (max-width: 1299px) {
             .wellcome-section__description {
-                margin: 0 auto;
-
-                h1 {
-                    font-size: 3rem;
-                    width: 100%;
-                }
-
-                p {
-                    width: 100%;
-                }
+                width: max-content;
             }
         }
-        
+
+        @media (max-width: 999px) {
+            .wellcome-section__description {
+                width: 100%;
+            }
+        }
+
         .wellcome-section__video {
             width: 746/1280 * 100%;
             aspect-ratio: 746/548;
             position: relative;
-            cursor: pointer;
 
-            .wellcome-section__video__preview {
-                object-fit: cover;
+            img {
+
+                &:last-child {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                @media (max-width: 399px) {
+                    &:last-child {
+                        width: 43px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1399px) {
+            .wellcome-section__video {
+                width: 560px;
+                aspect-ratio: 746/548;
+
+                img {
+
+                    &:first-child {
+                        width: 560px;
+                        aspect-ratio: 746/548;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1149px) {
+            .wellcome-section__video {
+                width: 420px;
+                aspect-ratio: 746/548;
+
+                img {
+
+                    &:first-child {
+                        width: 420px;
+                        aspect-ratio: 746/548;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 999px) {
+            .wellcome-section__video {
+                width: 80%;
+
+                img {
+
+                    &:first-child {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 999px) {
+            .wellcome-section__video {
                 width: 100%;
             }
-
-            .wellcome-section__video__play-btn {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        @media (max-width: 1120px) {
-            .wellcome-section__video {
-                width: 90%;
-                aspect-ratio: 280/205.62;
-            }
         }
     }
 
-    @media (max-width: 1749px) {
+    @media (min-width: 1149px) and (max-width: 1199px) {
         .wellcome-section__container {
-            flex-direction: column-reverse;
-            row-gap: 30px;
-            align-items: center;
+            column-gap: 25px;
         }
     }
 
-    @media (max-width: 1120px) {
+    @media (max-width: 1149px) {
         .wellcome-section__container {
-            width: 80%;
+            column-gap: 75px;
+        } 
+    }
+
+    @media (max-width: 1049px) {
+        .wellcome-section__container {
+            column-gap: 25px;
+        } 
+    }
+
+    @media (max-width: 999px) {
+        .wellcome-section__container {
+            flex-direction: column;
+            row-gap: 25px;
         }
     }
 
-    @media (max-width: 574px) {
-        .wellcome-section__container {
-            width: 95%;
-        }
+}
+
+@media (max-width: 999px) {
+    .wellcome-section {
+        padding: 16px 0 113px;
     }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 767px) {
     .wellcome-section {
-        padding-bottom: 49px;
-    }  
+        padding: 16px 0 49px;
+    }
+}
+
+.wellcome-section__video__preview {
+}
+.wellcome-section__video__play-btn {
 }
