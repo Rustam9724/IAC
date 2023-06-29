@@ -1,0 +1,100 @@
+.footer {
+    padding: 65px 0;
+    background-color: $accent-color;
+    color: white;
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__logo {
+            width: 188px;
+            aspect-ratio: 188/181;
+        }
+
+        @media (max-width: 849px) {
+            .footer__logo {
+                width: 136px;
+                aspect-ratio: 136/131;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer__logo {
+                margin-bottom: 16px;
+            }
+        }
+
+        .footer__contacts {
+            
+            h2 {
+                font-size: 2.4rem;
+                line-height: 28/24 * 100%;
+                font-weight: 700;
+                margin-bottom: 28px;
+            }
+
+            .footer__contacts__body {
+                display: flex;
+                column-gap: 36px;
+                font-size: 2rem;
+                line-height: 150%;
+
+                .footer__contacts__left {
+                    max-width: 401px;
+                }
+
+                .footer__contacts__right {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 12px;
+                }
+
+                @media (max-width: 1049px) {
+                    .footer__contacts__right {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            @media (max-width: 1049px) {
+                .footer__contacts__body {
+                    flex-direction: column;
+                    row-gap: 20px;
+                }
+            }
+
+            @media (max-width: 327px) {
+                .footer__contacts__body {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer__contacts {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer__social-media {
+            display: flex;
+            column-gap: 24px;
+        } 
+    }
+
+    @media (max-width: 767px) {
+        .footer__container {
+            flex-direction: column;
+        }  
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 50px 0;
+    }
+}
