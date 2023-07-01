@@ -5,6 +5,7 @@ export const SiteContext = createContext();
 
 const inititalState = {
     language: 'ru',
+    isModalForm: true,
 }
 
 export const ContextProvider = ({children}) => {

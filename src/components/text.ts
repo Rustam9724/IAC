@@ -280,6 +280,26 @@ const text: IText = {
         ru: 'ул. Узбекистон Овози, 21 Ташкент, Узбекистан 100007',
         en: 'st. Uzbekistan Ovozi, 21 Tashkent, Uzbekistan 100007',
     },
+    modalFormTitle: {
+        ru: 'Получите от нас коммерческое предложение или бесплатную экскурсию по объектам',
+        en: 'Get a commercial offer from us or a free tour of the facilities',
+    },
+    modalFormSubTitle: {
+        ru: 'Мы свяжемся с Вами',
+        en: 'We will contact you',
+    },
+    modalFormName: {
+        ru: 'Фамилия Имя',
+        en: 'Full name',
+    },
+    modalFormPhone: {
+        ru: 'Номер телефона',
+        en: 'phone number'
+    },
+    modalFormButton: {
+        ru: 'ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ',
+        en: 'GEN AN OFFER'
+    }
 }
 
 export default text;
