@@ -1,4 +1,11 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import { ITextItem } from './text';
+import text from './text';
+
 function Footer() {
+    const { language } = useContext(SiteContext);
+
     return (
         <footer className="footer">
             <div className="footer__container _container">
@@ -6,10 +13,18 @@ function Footer() {
                     <img src="/assets/footer/logo.svg" alt="logo" />
                 </div>
                 <div className="footer__contacts">
-                    <h2>Контакты</h2>
+                    <h2>
+                        {
+                            text.footerContactsTitle[language as keyof ITextItem]
+                        }
+                    </h2>
                     <div className="footer__contacts__body">
                         <div className="footer__contacts__left">
-                            <p>ул. Узбекистон Овози, 21 Ташкент, Узбекистан 100007</p>
+                            <p>
+                                {
+                                    text.footerAddress[language as keyof ITextItem]
+                                }
+                            </p>
                         </div>
                         <div className="footer__contacts__right">
                             <p>+998 99 999 99 99</p>

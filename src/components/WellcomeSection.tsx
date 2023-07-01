@@ -1,11 +1,30 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import text from './text';
+import { ITextItem } from './text';
+
 function WellcomeSection() {
+    const {language} = useContext(SiteContext);
+
     return (
         <section className="page__wellcome-section wellcome-section">
             <div className="wellcome-section__container _container">
                 <div className="wellcome-section__description">
-                    <h1>Промышленное оборудование <br /> в странах СНГ с пожизненной гарантией</h1>
-                    <p className="description__text text">Оформите заказ и получите в подарок: запчасти, средства по уходу или Kärcher</p>
-                    <a className="wellcome-section__button button">ОФОРМИТЬ ЗАКАЗ</a>
+                    <h1>
+                        {
+                            text.wellcomeTitle[language as keyof ITextItem]
+                        }
+                    </h1>
+                    <p className="description__text text">
+                        {
+                            text.wellcomeSubTitle[language as keyof ITextItem]
+                        }
+                    </p>
+                    <a className="wellcome-section__button button">
+                        {
+                            text.wellcomeButton[language as keyof ITextItem]
+                        }
+                    </a>
                 </div>
                 <div className="wellcome-section__video">
                     <img src="./assets/wellcome-section/video-preview.jpg" alt="video" className="wellcome-section__video__preview"/>

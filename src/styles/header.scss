@@ -1,3 +1,15 @@
+@keyframes protrusion-of-tongues {
+    from {
+        top: -15px;
+        opacity: 0;
+    }
+
+    to {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
 .header {
     background-image: url('../assets/header/background.png');
     background-repeat: no-repeat;
@@ -52,13 +64,36 @@
                 font-family: 'Minion Pro';
                 align-items: center;
                 cursor: pointer;
+                position: relative;
     
-                div {
+                .header__language__arrow {
                     width: 11px;
                     height: 8px;
                     background-image: url("../assets/header/arrow.jpg");
                     background-repeat: no-repeat;
                     background-size: cover;
+                    transition: all 0.2s ease-in;
+
+                    &.down {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .header__language__list {
+                    position: absolute;
+                    top: -25px;
+                    animation: protrusion-of-tongues 0.5s ease forwards;
+
+                    p {
+
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+
+                        &:hover {
+                            color: #00140d;
+                        }
+                    }
                 }
             }
     

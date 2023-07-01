@@ -1,8 +1,19 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import text from './text';
+import { ITextItem } from './text';
+
 function Exhibitions() {
+    const { language } = useContext(SiteContext);
+
     return (
         <section className="page__exhibitions exhibitions">
             <div className="exhibitions__container _container">
-                <h1>Мы уже 4 года учавствуем в крупных выставках Узбекистана</h1>
+                <h1>
+                    {
+                        text.exhibitionsTitle[language as keyof ITextItem]
+                    }
+                </h1>
                 <div className="exhibitions__body">
                     <div className="exhibitions_left">
                         <div className="exhibitions__left__top">

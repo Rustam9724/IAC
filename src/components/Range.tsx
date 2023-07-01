@@ -1,19 +1,54 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import text from './text';
+import { ITextItem } from './text';
+
 function Range() {
+    const { language } = useContext(SiteContext);
+
     return (
         <section className="page__range range">
             <div className="range__container _container">
                 <div className="range__body">
                     <div className="range__descripton">
-                        <h2>Большой ассортимент оборудования</h2>
+                        <h2>
+                            {
+                                text.rangeTitle[language as keyof ITextItem]
+                            }
+                        </h2>
                         <ul className="range__list">
-                            <li className="range__list__item">Нержавеющая сталь марки AISI–304</li>
-                            <li className="range__list__item">Электроника привезённая и Европы</li>
-                            <li className="range__list__item">Более 300 видов оборудования</li>
+                            <li className="range__list__item">
+                                {
+                                    text.rangeListFirstItem[language as keyof ITextItem]
+                                }
+                            </li>
+                            <li className="range__list__item">
+                                {
+                                    text.rangeListSecondItem[language as keyof ITextItem]
+                                }
+                            </li>
+                            <li className="range__list__item">
+                                {
+                                    text.rangeListThirdItem[language as keyof ITextItem]
+                                }
+                            </li>
                         </ul>
-                        <p className="range__text">Оставьте заявку — мы свяжемся с вами с готовым предложением</p>
+                        <p className="range__text">
+                            {
+                                text.rangeText[language as keyof ITextItem]
+                            }
+                        </p>
                         <div className="range__buttons">
-                            <div className="range__button button">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</div>
-                            <div className="range__button button_transpared button">СМОТРЕТЬ ВСЕ ТОВАРЫ</div>
+                            <div className="range__button button">
+                                {
+                                    text.rangeFirstButton[language as keyof ITextItem]
+                                }
+                            </div>
+                            <div className="range__button button_transpared button">
+                                {
+                                    text.rangeSecondButton[language as keyof ITextItem]
+                                }
+                            </div>
                         </div>
                     </div>
                     <div className="range__carousel">

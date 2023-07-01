@@ -34,9 +34,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
             row-gap: 50px;
+            margin: 0 -15px;
 
             .faq__question {
                 flex: 1 1 32%;
+                padding: 0 15px;
 
                 h3 {
                     font-size: 2.4rem;

@@ -1,4 +1,11 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import text from './text';
+import { ITextItem } from './text';
+
 function Employers() {
+    const { language } = useContext(SiteContext);
+
     return (
         <section className="page__employers employers">
             <div className="employers__container _container">
@@ -35,11 +42,27 @@ function Employers() {
                         </div>
                     </div>
                     <div className="employers__text">
-                        <h2>Каждый из наших специалистов ежегодно проходит обучение по повышению квалификации в разных странах</h2>
+                        <h2>
+                            {
+                                text.employersTitle[language as keyof ITextItem]
+                            }
+                        </h2>
                         <div className="employers__description">
-                            <p>На фото:</p>
-                            <p className="employers__employer">Павел Охлобыстин</p>
-                            <p>Монтажник компрессорного оборудования</p>
+                            <p>
+                                {
+                                    text.employersInPhoto[language as keyof ITextItem]
+                                }
+                            </p>
+                            <p className="employers__employer">
+                                {
+                                    text.employerName[language as keyof ITextItem]
+                                }
+                            </p>
+                            <p>
+                                {
+                                    text.employersJobTitle[language as keyof ITextItem]
+                                }
+                            </p>
                         </div>
                     </div>
                 </div>

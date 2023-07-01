@@ -1,8 +1,19 @@
+import { useContext } from 'react';
+import { SiteContext } from '../context';
+import { ITextItem } from './text';
+import text from './text';
+
 function Stages() {
+    const { language } = useContext(SiteContext);
+
     return (
         <section className="page__stages stages">
             <div className="stages__container _container">
-                <h2 className="stages__title">Этапы работы</h2>
+                <h2 className="stages__title">
+                    {
+                        text.stagesTitle[language as keyof ITextItem]
+                    }
+                </h2>
                 <div className="stages__body">
                     <div className="stages__body__row">
                         <div className="stages__stage stage">
@@ -10,14 +21,24 @@ function Stages() {
                                 <img src="/assets/stages/01.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Звонок-заявка</h3>
-                                <p>Поступление звонка или заявки с сайта и соц сетей</p>
+                                <h3>
+                                    {
+                                        text.stagesFirstStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesFirstStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                         <div className="stages__body__term term term_horizontal">
                             <div className="term__arrow term__arrow_start">
                             </div>
-                            <p>3 дня</p>
+                            <p>
+                                3 { text.stagesDaysFirst[language as keyof ITextItem]}
+                            </p>
                             <div className="term__arrow term__arrow_end ">
                             </div>
                         </div>
@@ -26,15 +47,25 @@ function Stages() {
                                 <img src="/assets/stages/02.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Встреча</h3>
-                                <p>Встреча с клиентом и обсуждение деталей предстоящей работы</p>
+                                <h3>
+                                    {
+                                        text.stagesSecondStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesSecondStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_right">
                         <div className="term__arrow term__arrow_start">
                         </div>
-                        <p>7 дней</p>
+                        <p>
+                            7 { text.stagesDaysSecond[language as keyof ITextItem] }
+                        </p>
                         <div className="term__arrow term__arrow_end">
                         </div>
                     </div>
@@ -44,14 +75,24 @@ function Stages() {
                                 <img src="/assets/stages/03.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Осмотр завода</h3>
-                                <p>Осмотр объекта для предстоящих работ</p>
+                                <h3>
+                                    {
+                                        text.stagesThirdStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesThirdStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                         <div className="stages__body__term term term_horizontal term_reverse">
                             <div className="term__arrow term__arrow_start">
                             </div>
-                            <p>3 дня</p>
+                            <p>
+                                3 { text.stagesDaysFirst[language as keyof ITextItem] }
+                            </p>
                             <div className="term__arrow term__arrow_end">
                             </div>
                         </div>
@@ -60,15 +101,25 @@ function Stages() {
                                 <img src="/assets/stages/04.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Подписание договора</h3>
-                                <p>Согласование и подписание договора</p>
+                                <h3>
+                                    {
+                                        text.stagesFourthStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesFourthStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_left">
                         <div className="term__arrow term__arrow_start">
                         </div>
-                        <p>3 дня</p>
+                        <p>
+                            3 { text.stagesDaysFirst[language as keyof ITextItem] }
+                        </p>
                         <div className="term__arrow term__arrow_end">
                         </div>
                     </div>
@@ -78,14 +129,24 @@ function Stages() {
                                 <img src="/assets/stages/05.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Оплата</h3>
-                                <p>Внесение предоплаты согласно условиям оговорённым в договоре</p>
+                                <h3>
+                                    {
+                                        text.stagesFifthStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesFifthStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                         <div className="stages__body__term term term_horizontal">
                             <div className="term__arrow term__arrow_start">
                             </div>
-                            <p>1 день</p>
+                            <p>
+                                1 { text.stagesDay[language as keyof ITextItem] }
+                            </p>
                             <div className="term__arrow term__arrow_end">
                             </div>
                         </div>
@@ -94,15 +155,25 @@ function Stages() {
                                 <img src="/assets/stages/06.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Производство</h3>
-                                <p>Производство оборудования и запчастей согласно заказу</p>
+                                <h3>
+                                    {
+                                        text.stagesSixthStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesSixthStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_right">
                         <div className="term__arrow term__arrow_start">
                         </div>
-                        <p>2 - 6 месяцев</p>
+                        <p>
+                            2 - 6 { text.stagesMonth[language as keyof ITextItem] }
+                        </p>
                         <div className="term__arrow term__arrow_end">
                         </div>
                     </div>
@@ -112,14 +183,24 @@ function Stages() {
                                 <img src="/assets/stages/07.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Доставка</h3>
-                                <p>Доставка оборудования в страну и город клиента</p>
+                                <h3>
+                                    {
+                                        text.stagesSeventhStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesSeventhStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                         <div className="stages__body__term term term_horizontal term_reverse">
                             <div className="term__arrow term__arrow_start">
                             </div>
-                            <p>10 - 15 дней</p>
+                            <p>
+                                10 - 15 { text.stagesDaysSecond[language as keyof ITextItem] }
+                            </p>
                             <div className="term__arrow term__arrow_end">
                             </div>
                         </div>
@@ -128,15 +209,25 @@ function Stages() {
                                 <img src="/assets/stages/08.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Монтажные работы</h3>
-                                <p>Установка оборудования на объект клиента</p>
+                                <h3>
+                                    {
+                                        text.stagesEighthStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesEighthStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="stages__body__term term term_vertical term_vertical_left">
                         <div className="term__arrow term__arrow_start">
                         </div>
-                        <p>30 дней</p>
+                        <p>
+                            30 { text.stagesDaysSecond[language as keyof ITextItem] }
+                        </p>
                         <div className="term__arrow term__arrow_end">
                         </div>
                     </div>
@@ -146,14 +237,34 @@ function Stages() {
                                 <img src="/assets/stages/09.svg" alt="" />
                             </div>
                             <div className="stage__description">
-                                <h3>Запуск производства</h3>
-                                <p>Полноценное запущенное производство</p>
+                                <h3>
+                                    {
+                                        text.stagesNinthStageTitle[language as keyof ITextItem]
+                                    }
+                                </h3>
+                                <p>
+                                    {
+                                        text.stagesNinthStageText[language as keyof ITextItem]
+                                    }
+                                </p>
                             </div>
                         </div>
                         <div className="stages__getstart">
-                            <h2>Давайте начнём уже сейчас</h2>
-                            <p>Оставьте заявку — мы свяжемся с вами с готовым предложением</p>
-                            <button className="stages__button button">НАЧАТЬ СЕЙЧАС</button>
+                            <h2>
+                                {
+                                    text.stagesGetStartTitle[language as keyof ITextItem]
+                                }
+                            </h2>
+                            <p>
+                                {
+                                    text.stagesGetStartText[language as keyof ITextItem]
+                                }
+                            </p>
+                            <button className="stages__button button">
+                                {
+                                    text.stagesButton[language as keyof ITextItem]
+                                }
+                            </button>
                         </div> 
                     </div>
                 </div>
