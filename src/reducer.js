@@ -5,6 +5,11 @@ export function reducer(state, {type, payload}) {
                 ...state,
                 language: payload.language === 'ru' ? 'ru' : 'en',
             }
+        case 'SET_MODAL-FORM': 
+            return {
+                ...state,
+                isModalForm: payload.action,
+            }
         default: 
             return state;
     }

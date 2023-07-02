@@ -61,6 +61,7 @@ html, body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+
 }
 
 ._container {
@@ -120,4 +121,18 @@ html, body {
 .underfooter {
   background-image: url("../public/assets/underfooter/background.jpg");
   background-image: cover;
+}
+
+.substrate {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(102, 102, 102, 0.5);
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+
+  &.active {
+    display: block;
+  }
 }

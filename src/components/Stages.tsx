@@ -4,7 +4,16 @@ import { ITextItem } from './text';
 import text from './text';
 
 function Stages() {
-    const { language } = useContext(SiteContext);
+    const {language, setIsModalForm } = useContext(SiteContext);
+
+    function openModalForm() {
+        setIsModalForm(true);
+        const body = document.querySelector('body')
+        if (body) {
+            body.style.height = '100vh';
+            body.style.overflow = 'hidden';
+        }
+    }
 
     return (
         <section className="page__stages stages">
@@ -260,7 +269,7 @@ function Stages() {
                                     text.stagesGetStartText[language as keyof ITextItem]
                                 }
                             </p>
-                            <button className="stages__button button">
+                            <button className="stages__button button" onClick={openModalForm}>
                                 {
                                     text.stagesButton[language as keyof ITextItem]
                                 }

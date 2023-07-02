@@ -4,7 +4,16 @@ import text from './text';
 import { ITextItem } from './text';
 
 function WellcomeSection() {
-    const {language} = useContext(SiteContext);
+    const {language, setIsModalForm} = useContext(SiteContext);
+
+    function openModal() {
+        setIsModalForm(true);
+        const body = document.querySelector('body')
+        if (body) {
+            body.style.height = '100vh';
+            body.style.overflow = 'hidden';
+        }
+    }
 
     return (
         <section className="page__wellcome-section wellcome-section">
@@ -20,7 +29,7 @@ function WellcomeSection() {
                             text.wellcomeSubTitle[language as keyof ITextItem]
                         }
                     </p>
-                    <a className="wellcome-section__button button">
+                    <a className="wellcome-section__button button" onClick={openModal}>
                         {
                             text.wellcomeButton[language as keyof ITextItem]
                         }

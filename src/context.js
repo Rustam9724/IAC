@@ -5,17 +5,21 @@ export const SiteContext = createContext();
 
 const inititalState = {
     language: 'ru',
-    isModalForm: true,
+    isModalForm: false,
 }
 
 export const ContextProvider = ({children}) => {
-    const [value, dispatch] = useReducer(reducer, inititalState);
+    const [state, dispatch] = useReducer(reducer, inititalState);
 
-    value.setLanguage = (language) => {
+    state.setLanguage = (language) => {
         dispatch({type: 'SET_LANGUAGE', payload: {language: language}})
-    } 
+    }
 
-    return <SiteContext.Provider value={value}>
+    state.setIsModalForm = (action) => {
+        dispatch({type: 'SET_MODAL-FORM', payload: {action: action}})
+    }
+
+    return <SiteContext.Provider value={state}>
         {children}
     </SiteContext.Provider>
 }

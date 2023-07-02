@@ -4,7 +4,16 @@ import text from './text';
 import { ITextItem } from './text';
 
 function Clients() {
-    const { language } = useContext(SiteContext);
+    const {language, setIsModalForm } = useContext(SiteContext);
+
+    function openModalForm() {
+        setIsModalForm(true);
+        const body = document.querySelector('body')
+        if (body) {
+            body.style.height = '100vh';
+            body.style.overflow = 'hidden';
+        }
+    }
 
     return (
         <section className="page__clients clients">
@@ -20,7 +29,7 @@ function Clients() {
                             text.clientsText[language as keyof ITextItem]
                         }
                     </p>
-                    <button className="button">
+                    <button className="button" onClick={openModalForm}>
                         {
                             text.clientsButton[language as keyof ITextItem]
                         }

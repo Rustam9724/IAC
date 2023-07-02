@@ -25,7 +25,7 @@ function ModalForm() {
                             text.modalFormName[language as keyof ITextItem]
                         }
                     </p>
-                    <input type="text" placeholder={text.modalFormName[language as keyof ITextItem]}/>
+                    <input type="text" placeholder={text.modalFormName[language as keyof ITextItem]} required/>
                 </label>
                 <label>
                     <p>
@@ -33,7 +33,7 @@ function ModalForm() {
                             text.modalFormPhone[language as keyof ITextItem]
                         }
                     </p>
-                    <input type="phone" />
+                    <input type="phone" required/>
                 </label>
                 <button className="modal-form__button button">
                     {

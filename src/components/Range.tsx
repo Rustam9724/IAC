@@ -4,7 +4,16 @@ import text from './text';
 import { ITextItem } from './text';
 
 function Range() {
-    const { language } = useContext(SiteContext);
+    const {language, setIsModalForm} = useContext(SiteContext);
+
+    function openModal() {
+        setIsModalForm(true);
+        const body = document.querySelector('body')
+        if (body) {
+            body.style.height = '100vh';
+            body.style.overflow = 'hidden';
+        }
+    }
 
     return (
         <section className="page__range range">
@@ -39,7 +48,7 @@ function Range() {
                             }
                         </p>
                         <div className="range__buttons">
-                            <div className="range__button button">
+                            <div className="range__button button" onClick={openModal}>
                                 {
                                     text.rangeFirstButton[language as keyof ITextItem]
                                 }
