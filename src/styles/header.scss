@@ -97,7 +97,7 @@
                 }
             }
     
-            .header__burger-menu {
+            .header__burger-menu-btn {
                 min-width: 40px;
                 height: 16px;
                 display: flex;
@@ -105,7 +105,7 @@
                 justify-content: space-between;
                 cursor: pointer;
     
-                .burger-menu__band {
+                .burger-menu-btn__band {
                     height: 2px;
                     background-color: $accent-color;
 
@@ -117,7 +117,7 @@
 
                 &:hover {
 
-                    .burger-menu__band {
+                    .burger-menu-btn__band {
 
                         &:nth-child(2) {
                             width: 100%;

@@ -2,10 +2,12 @@ import { useState, useContext } from 'react';
 import { SiteContext } from '../context';
 import text from './text';
 import { ITextItem } from './text';
+import BurgerMenu from './BurgerMenu';
 
 export function Header() {
     const [isLanListOpen, setIsLanListOpen] = useState(false);
     const {language, setLanguage} = useContext(SiteContext);
+    const [isBurgerMenu, setIsBurgerMenu] = useState(false);
 
     return (
         <header className="header">
@@ -31,13 +33,16 @@ export function Header() {
                                     </div>
                         }
                     </div>
-                    <div className="header__burger-menu burger-menu">
-                        <div className="burger-menu__band"></div>
-                        <div className="burger-menu__band"></div>
-                        <div className="burger-menu__band"></div>
+                    <div className="header__burger-menu-btn burger-menu-btn" onClick={() => setIsBurgerMenu(!isBurgerMenu)}>
+                        <div className="burger-menu-btn__band"></div>
+                        <div className="burger-menu-btn__band"></div>
+                        <div className="burger-menu-btn__band"></div>
                     </div>
                 </div>
             </div>
+            {
+                isBurgerMenu && <BurgerMenu />
+            }
         </header> 
     )
 }
