@@ -67,7 +67,7 @@ export function Header() {
                             </div>
                         }
                     </div>
-                    <div className="header__burger-menu-btn burger-menu-btn" onClick={burgerMenuSwitcher}>
+                    <div className={`header__burger-menu-btn burger-menu-btn ${isBurgerMenu ? 'open' : null}`} onClick={burgerMenuSwitcher}>
                         <div className="burger-menu-btn__band"></div>
                         <div className="burger-menu-btn__band"></div>
                         <div className="burger-menu-btn__band"></div>
