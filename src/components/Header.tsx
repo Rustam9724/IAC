@@ -9,6 +9,22 @@ export function Header() {
     const {language, setLanguage} = useContext(SiteContext);
     const [isBurgerMenu, setIsBurgerMenu] = useState(false);
 
+    function burgerMenuSwitcher() {
+        const burgerMenu: HTMLDivElement | null = document.querySelector('.burger-menu');
+        if (burgerMenu) {
+            if (!isBurgerMenu) {
+                burgerMenu.style.right = '0';
+                burgerMenu.style.transition = '0.75s ease'
+                setIsBurgerMenu(true);
+            } else {
+                burgerMenu.style.right = '-100%';
+                burgerMenu.style.transition = '0.75s ease'
+                setIsBurgerMenu(false);
+            }
+
+        }
+    }
+
     return (
         <header className="header">
             <div className="header__container _container">
@@ -33,7 +49,7 @@ export function Header() {
                                     </div>
                         }
                     </div>
-                    <div className="header__burger-menu-btn burger-menu-btn" onClick={() => setIsBurgerMenu(!isBurgerMenu)}>
+                    <div className="header__burger-menu-btn burger-menu-btn" onClick={burgerMenuSwitcher}>
                         <div className="burger-menu-btn__band"></div>
                         <div className="burger-menu-btn__band"></div>
                         <div className="burger-menu-btn__band"></div>
@@ -41,7 +57,7 @@ export function Header() {
                 </div>
             </div>
             {
-                isBurgerMenu && <BurgerMenu />
+                <BurgerMenu />
             }
         </header> 
     )
