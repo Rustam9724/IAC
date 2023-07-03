@@ -1,2 +1,4 @@
 1. iPhone 5/SE (320 x 568).
-2. 
+2. iPhone 4 (320 x 480).
+3. Nokia Lumia 520 (320 x 533).
+4. Nexus 5 (360 x 640).

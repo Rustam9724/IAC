@@ -50,6 +50,13 @@
         }
     }
 
+    @media (max-width: 360px) {
+        .modal-form__title {
+            font-size: 1.7rem;
+            margin-bottom: 12px;
+        }
+    }
+
     .modal-form__sub-title {
         font-size: 2.4rem;
         font-weight: 700;
@@ -61,6 +68,13 @@
     @media (max-width: 849px) {
         .modal-form__sub-title {
             font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .modal-form__sub-title {
+            font-size: 1.4rem;
+            margin-bottom: 13px;
         }
     }
 
@@ -169,6 +183,6 @@
 @media (max-width: 464px) {
     .modal-form {
         width: 95%;
-        padding: 30px 15px;
+        padding: 15px 15px;
     }
 }
