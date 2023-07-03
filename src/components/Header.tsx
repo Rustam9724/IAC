@@ -6,8 +6,7 @@ import BurgerMenu from './BurgerMenu';
 
 export function Header() {
     const [isLanListOpen, setIsLanListOpen] = useState(false);
-    const {language, setLanguage} = useContext(SiteContext);
-    const [isBurgerMenu, setIsBurgerMenu] = useState(false);
+    const {language, setLanguage, isBurgerMenu, setIsBurgerMenu} = useContext(SiteContext);
 
     function burgerMenuSwitcher() {
         const burgerMenu: HTMLDivElement | null = document.querySelector('.burger-menu');
@@ -75,7 +74,7 @@ export function Header() {
                 </div>
             </div>
             {
-                <BurgerMenu />
+                <BurgerMenu/>
             }
         </header> 
     )

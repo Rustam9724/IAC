@@ -6,6 +6,7 @@ export const SiteContext = createContext();
 const inititalState = {
     language: 'ru',
     isModalForm: false,
+    isBurgerMenu: false,
 }
 
 export const ContextProvider = ({children}) => {
@@ -17,6 +18,10 @@ export const ContextProvider = ({children}) => {
 
     state.setIsModalForm = (action) => {
         dispatch({type: 'SET_MODAL-FORM', payload: {action: action}})
+    }
+
+    state.setIsBurgerMenu = (isBurgerMenu) => {
+        dispatch({type: 'SET_IS-BURGER_MENU', payload: {isBurgerMenu: isBurgerMenu}})
     }
 
     return <SiteContext.Provider value={state}>

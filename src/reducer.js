@@ -10,6 +10,11 @@ export function reducer(state, {type, payload}) {
                 ...state,
                 isModalForm: payload.action,
             }
+        case 'SET_IS-BURGER_MENU': 
+            return {
+                ...state,
+                isBurgerMenu: payload.isBurgerMenu,
+            } 
         default: 
             return state;
     }
