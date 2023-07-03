@@ -6,13 +6,16 @@ import { ITextItem } from './text';
 function WellcomeSection() {
     const {language, setIsModalForm} = useContext(SiteContext);
 
-    function openModal() {
-        setIsModalForm(true);
+    function modalOpen() {
         const body = document.querySelector('body')
-        if (body) {
+        const modalForm: HTMLDivElement | null = document.querySelector('.modal-form');
+        if (body && modalForm) {
             body.style.height = '100vh';
             body.style.overflow = 'hidden';
             body.style.marginRight = '16px';
+            modalForm.style.top = '20px';
+            modalForm.style.transition = '1s ease';
+            setIsModalForm(true);
         }
     }
 
@@ -30,7 +33,7 @@ function WellcomeSection() {
                             text.wellcomeSubTitle[language as keyof ITextItem]
                         }
                     </p>
-                    <a className="wellcome-section__button button" onClick={openModal}>
+                    <a className="wellcome-section__button button" onClick={modalOpen}>
                         {
                             text.wellcomeButton[language as keyof ITextItem]
                         }

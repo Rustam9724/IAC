@@ -6,13 +6,16 @@ import { ITextItem } from './text';
 function Clients() {
     const {language, setIsModalForm } = useContext(SiteContext);
 
-    function openModalForm() {
-        setIsModalForm(true);
+    function modalOpen() {
         const body = document.querySelector('body')
-        if (body) {
+        const modalForm: HTMLDivElement | null = document.querySelector('.modal-form');
+        if (body && modalForm) {
             body.style.height = '100vh';
             body.style.overflow = 'hidden';
-            body.style.marginRight = '17px';
+            body.style.marginRight = '16px';
+            modalForm.style.top = '20px';
+            modalForm.style.transition = '1s ease';
+            setIsModalForm(true);
         }
     }
 
@@ -30,7 +33,7 @@ function Clients() {
                             text.clientsText[language as keyof ITextItem]
                         }
                     </p>
-                    <button className="button" onClick={openModalForm}>
+                    <button className="button" onClick={modalOpen}>
                         {
                             text.clientsButton[language as keyof ITextItem]
                         }

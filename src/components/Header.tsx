@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { SiteContext } from '../context';
 import text from './text';
 import { ITextItem } from './text';
@@ -8,8 +8,6 @@ export function Header() {
     const [isLanListOpen, setIsLanListOpen] = useState(false);
     const {language, setLanguage} = useContext(SiteContext);
     const [isBurgerMenu, setIsBurgerMenu] = useState(false);
-    // const myRef: React.RefObject<HTMLDivElement> = React.createRef();
-    // const languageList = myRef.current;
 
     function burgerMenuSwitcher() {
         const burgerMenu: HTMLDivElement | null = document.querySelector('.burger-menu');
@@ -33,10 +31,12 @@ export function Header() {
                 languageList.style.top = '30px';
                 languageList.style.opacity = '1';
                 languageList.style.transition = '0.2s ease'
+                languageList.style.zIndex = '1'
                 setIsLanListOpen(true);
             } else {
                 languageList.style.top = '-15px';
                 languageList.style.opacity = '0';
+                languageList.style.zIndex = '-1'
                 languageList.style.transition = '0.2s ease'
                 setIsLanListOpen(false);
             }

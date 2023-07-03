@@ -1,21 +1,3 @@
-@keyframes modalProtrusion {
-    from {
-        top: -100%;
-    }
-    to {
-        top: 20px;
-    }
-}
-
-@keyframes modalHidden {
-    from {
-        top: 20px;
-    }
-    to {
-        top: -100%;
-    }
-}
-
 .modal-form {
     position: fixed;
     top: -100%;
@@ -26,7 +8,6 @@
     background-color: white;
     z-index: 3;
     transform: translateX(-50%);
-    animation: modalProtrusion 1s ease forwards;
 
     .modal-form__title {
         font-weight: 700;

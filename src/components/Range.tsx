@@ -6,13 +6,16 @@ import { ITextItem } from './text';
 function Range() {
     const {language, setIsModalForm} = useContext(SiteContext);
 
-    function openModal() {
-        setIsModalForm(true);
+    function modalOpen() {
         const body = document.querySelector('body')
-        if (body) {
+        const modalForm: HTMLDivElement | null = document.querySelector('.modal-form');
+        if (body && modalForm) {
             body.style.height = '100vh';
             body.style.overflow = 'hidden';
-            body.style.marginRight = '17px';
+            body.style.marginRight = '16px';
+            modalForm.style.top = '20px';
+            modalForm.style.transition = '1s ease';
+            setIsModalForm(true);
         }
     }
 
@@ -49,7 +52,7 @@ function Range() {
                             }
                         </p>
                         <div className="range__buttons">
-                            <div className="range__button button" onClick={openModal}>
+                            <div className="range__button button" onClick={modalOpen}>
                                 {
                                     text.rangeFirstButton[language as keyof ITextItem]
                                 }
