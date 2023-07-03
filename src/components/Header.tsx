@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { SiteContext } from '../context';
 import text from './text';
 import { ITextItem } from './text';
@@ -8,6 +8,8 @@ export function Header() {
     const [isLanListOpen, setIsLanListOpen] = useState(false);
     const {language, setLanguage} = useContext(SiteContext);
     const [isBurgerMenu, setIsBurgerMenu] = useState(false);
+    // const myRef: React.RefObject<HTMLDivElement> = React.createRef();
+    // const languageList = myRef.current;
 
     function burgerMenuSwitcher() {
         const burgerMenu: HTMLDivElement | null = document.querySelector('.burger-menu');
@@ -21,9 +23,26 @@ export function Header() {
                 burgerMenu.style.transition = '0.75s ease'
                 setIsBurgerMenu(false);
             }
-
         }
     }
+
+    function languageSwitcher() {
+        const languageList: HTMLDivElement | null = document.querySelector('.header__language__list');
+        if (languageList) {
+            if (!isLanListOpen) {
+                languageList.style.top = '30px';
+                languageList.style.opacity = '1';
+                languageList.style.transition = '0.2s ease'
+                setIsLanListOpen(true);
+            } else {
+                languageList.style.top = '-15px';
+                languageList.style.opacity = '0';
+                languageList.style.transition = '0.2s ease'
+                setIsLanListOpen(false);
+            }
+        }
+    }
+
 
     return (
         <header className="header">
@@ -38,15 +57,14 @@ export function Header() {
                     </div>
                 </div>
                 <div className="header__right">
-                    <div className="header__language" onClick={() => setIsLanListOpen(!isLanListOpen)}>
+                    <div className="header__language" onClick={languageSwitcher}>
                         <span>{language === 'ru' ? 'RU' : 'EN'}</span>
                         <div className={`header__language__arrow ${isLanListOpen ? 'down' : null}`}></div>
                         {
-                            isLanListOpen 
-                                && <div className="header__language__list">
-                                        <p onClick={() => setLanguage('ru')}>RU</p>
-                                        <p onClick={() => setLanguage('en')}>EN</p>
-                                    </div>
+                            <div className="header__language__list">
+                                <p onClick={() => setLanguage('ru')}>RU</p>
+                                    <p onClick={() => setLanguage('en')}>EN</p>
+                            </div>
                         }
                     </div>
                     <div className="header__burger-menu-btn burger-menu-btn" onClick={burgerMenuSwitcher}>

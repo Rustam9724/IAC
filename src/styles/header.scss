@@ -1,4 +1,4 @@
-@keyframes protrusion-of-tongues {
+@keyframes protrusion-of-languages {
     from {
         top: -15px;
         opacity: 0;
@@ -82,8 +82,9 @@
 
                 .header__language__list {
                     position: absolute;
-                    top: -25px;
-                    animation: protrusion-of-tongues 0.5s ease forwards;
+                    top: -15px;
+                    opacity: 0;
+                    // animation: protrusion-of-tongues 0.5s ease forwards;
 
                     p {
 
