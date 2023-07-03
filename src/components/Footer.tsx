@@ -7,7 +7,7 @@ function Footer() {
     const { language } = useContext(SiteContext);
 
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="footer__container _container">
                 <div className="footer__logo _ibg">
                     <img src="/assets/footer/logo.svg" alt="logo" />

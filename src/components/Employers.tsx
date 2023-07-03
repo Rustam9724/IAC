@@ -8,7 +8,7 @@ function Employers() {
 
     return (
         <section className="page__employers employers">
-            <div className="employers__container _container">
+            <div className="employers__container _container" id="employers__container">
                 <div className="employers__body">
                     <div className="employers__carousel">
                         <div className="employers__image">

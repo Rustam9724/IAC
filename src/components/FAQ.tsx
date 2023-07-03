@@ -7,7 +7,7 @@ function FAQ() {
     const { language } = useContext(SiteContext);
 
     return (
-        <section className="page__faq faq">
+        <section className="page__faq faq" id="FAQ">
             <div className="faq__container _container">
                 <h2>
                     {

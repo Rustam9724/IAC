@@ -21,7 +21,7 @@ function Clients() {
 
     return (
         <section className="page__clients clients">
-            <div className="clients__container _container">
+            <div className="clients__container _container" id="clients__container">
                 <div className="clients__description">
                     <h2>
                         {

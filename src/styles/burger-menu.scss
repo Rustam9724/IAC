@@ -7,25 +7,30 @@
     font-size: 2.4rem;
     line-height: 28/24 * 100%;
     font-weight: 700;
-    color: $accent-color;
     z-index: 2;
-
+    
     .burger-menu__nav {
-
+        
         .burger-menu__list {
-
-           
+            
+            
             .burger-menu__item {
                 cursor: pointer;
-                transition: all 0.5s ease;
+                
+                a {
+                    transition: all 0.5s ease;
+                    color: $accent-color;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        color: #005c39;
+                    }
+                }
 
                 &:not(:last-child) {
                     margin-bottom: 21px;
                 }
 
-                &:hover {
-                    color: #005c39;
-                }
             }
         }
     }

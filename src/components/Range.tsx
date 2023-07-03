@@ -24,7 +24,7 @@ function Range() {
             <div className="range__container _container">
                 <div className="range__body">
                     <div className="range__descripton">
-                        <h2>
+                        <h2 id="range__title">
                             {
                                 text.rangeTitle[language as keyof ITextItem]
                             }

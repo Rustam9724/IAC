@@ -20,7 +20,7 @@ function WellcomeSection() {
     }
 
     return (
-        <section className="page__wellcome-section wellcome-section">
+        <section className="page__wellcome-section wellcome-section" id="wellcome-section">
             <div className="wellcome-section__container _container">
                 <div className="wellcome-section__description">
                     <h1>
