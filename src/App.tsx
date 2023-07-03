@@ -15,6 +15,7 @@ function App() {
     if (body) {
       body.style.height = 'unset';
       body.style.overflow = 'auto';
+      body.style.marginRight = '0';
     }
 
   }

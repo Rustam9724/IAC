@@ -4,10 +4,10 @@ import text from './text';
 import { ITextItem } from './text';
 
 function ModalForm() {
-    const { language } = useContext(SiteContext);
+    const {language, isModalForm} = useContext(SiteContext);
 
     return (
-        <div className="modal-form">
+        <div className='modal-form'>
             <h2 className="modal-form__title">
                 {
                     text.modalFormTitle[language as keyof ITextItem]

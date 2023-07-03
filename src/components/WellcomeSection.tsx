@@ -12,6 +12,7 @@ function WellcomeSection() {
         if (body) {
             body.style.height = '100vh';
             body.style.overflow = 'hidden';
+            body.style.marginRight = '16px';
         }
     }
 
