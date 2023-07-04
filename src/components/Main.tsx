@@ -6,6 +6,7 @@ import Stages from "./Stages";
 import Exhibitions from "./Exhibitions";
 import UnderFooter from "./UnderFooter";
 import ModalForm from "./ModalForm";
+import ModalVideo from "./ModalVideo";
 
 function Main() {
 
@@ -19,6 +20,7 @@ function Main() {
             <Exhibitions />
             <UnderFooter />
             <ModalForm />
+            <ModalVideo />
         </div>
     )
 }

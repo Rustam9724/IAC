@@ -4,10 +4,10 @@ import text from './text';
 import { ITextItem } from './text';
 
 function WellcomeSection() {
-    const {language, setIsModalForm} = useContext(SiteContext);
+    const {language, setIsModalForm, setIsModalVideo} = useContext(SiteContext);
+    const body = document.querySelector('body')
 
-    function modalOpen() {
-        const body = document.querySelector('body')
+    function modalFormOpen() {
         const modalForm: HTMLDivElement | null = document.querySelector('.modal-form');
         if (body && modalForm) {
             body.style.height = '100vh';
@@ -16,6 +16,18 @@ function WellcomeSection() {
             modalForm.style.top = '20px';
             modalForm.style.transition = '1s ease';
             setIsModalForm(true);
+        }
+    }
+
+    function modalVideoOpen() {
+        const modalVideo: HTMLDivElement | null = document.querySelector('.modal-video');
+        if (body && modalVideo) {
+            body.style.height = '100vh';
+            body.style.overflow = 'hidden';
+            body.style.marginRight = '16px';
+            modalVideo.style.top = '20px';
+            modalVideo.style.transition = '1s ease';
+            setIsModalVideo(true);
         }
     }
 
@@ -33,7 +45,7 @@ function WellcomeSection() {
                             text.wellcomeSubTitle[language as keyof ITextItem]
                         }
                     </p>
-                    <a className="wellcome-section__button button" onClick={modalOpen}>
+                    <a className="wellcome-section__button button" onClick={modalFormOpen}>
                         {
                             text.wellcomeButton[language as keyof ITextItem]
                         }
@@ -41,7 +53,7 @@ function WellcomeSection() {
                 </div>
                 <div className="wellcome-section__video">
                     <img src="./assets/wellcome-section/video-preview.jpg" alt="video" className="wellcome-section__video__preview"/>
-                    <svg width="116" height="120" viewBox="0 0 116 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="116" height="120" viewBox="0 0 116 120" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={modalVideoOpen}>
                         <ellipse opacity="0.15" cx="57.9587" cy="60" rx="57.9587" ry="60" fill="white"/>
                         <ellipse opacity="0.4" cx="57.9587" cy="60" rx="46.367" ry="48" fill="white"/>
                         <ellipse cx="57.9588" cy="60" rx="28.9793" ry="30" fill="white"/>

@@ -8,12 +8,17 @@ export function reducer(state, {type, payload}) {
         case 'SET_MODAL-FORM': 
             return {
                 ...state,
-                isModalForm: payload.action,
+                isModalForm: payload.modalFormAction,
             }
         case 'SET_IS-BURGER_MENU': 
             return {
                 ...state,
                 isBurgerMenu: payload.isBurgerMenu,
+            }
+        case 'SET_MODAL-VIDEO': 
+            return {
+                ...state,
+                isModalVideo: payload.modalVideoAction,
             } 
         default: 
             return state;

@@ -7,6 +7,7 @@ const inititalState = {
     language: 'ru',
     isModalForm: false,
     isBurgerMenu: false,
+    isModalVideo: false,
 }
 
 export const ContextProvider = ({children}) => {
@@ -16,12 +17,16 @@ export const ContextProvider = ({children}) => {
         dispatch({type: 'SET_LANGUAGE', payload: {language: language}})
     }
 
-    state.setIsModalForm = (action) => {
-        dispatch({type: 'SET_MODAL-FORM', payload: {action: action}})
+    state.setIsModalForm = (modalFormAction) => {
+        dispatch({type: 'SET_MODAL-FORM', payload: {modalFormAction: modalFormAction}})
     }
 
     state.setIsBurgerMenu = (isBurgerMenu) => {
         dispatch({type: 'SET_IS-BURGER_MENU', payload: {isBurgerMenu: isBurgerMenu}})
+    }
+
+    state.setIsModalVideo = (modalVideoAction) => {
+        dispatch({type: 'SET_MODAL-VIDEO', payload: {modalVideoAction: modalVideoAction}})
     }
 
     return <SiteContext.Provider value={state}>
