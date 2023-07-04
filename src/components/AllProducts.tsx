@@ -2,16 +2,22 @@ function AllProducts() {
     return (
         <div className="all-products">
             <div className="all-products__container _container">
-                <select value="Выбрать категорию">
-                    <option>
-                        <select value="Технологические линии">
-                            <option>Сушка овощей и фруктов</option>
-                            <option>Консервирование грибов</option>
-                            <option>Сушка абрикосов</option>
-                            <option>Переработка овощей</option>
-                        </select>
-                    </option>
-                </select>
+                <div className="all-products__categories categories">
+                    <div className="categories__first-level">
+                        <p>Выбрать категорию</p>
+                        <div></div>
+                    </div>
+                    <div className="categories__second-level">
+                        <p>Технологическе линии</p>
+                        <div></div>
+                    </div>
+                    <div className="categories__third-level">
+                        <p>Сушка овощей и фруктов</p>
+                        <p>Консервирование грибов</p>
+                        <p>Сушка абрикосов</p>
+                        <p>Переработка овощей</p>
+                    </div>
+                </div>
                 <div className="all-products__body">
                     <h2>Всё оборудование</h2>
                     <hr />
