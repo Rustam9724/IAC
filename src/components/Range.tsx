@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { SiteContext } from '../context';
 import text from './text';
 import { ITextItem } from './text';
+import { Link } from 'react-router-dom';
 
 function Range() {
     const {language, setIsModalForm} = useContext(SiteContext);
@@ -57,11 +58,11 @@ function Range() {
                                     text.rangeFirstButton[language as keyof ITextItem]
                                 }
                             </div>
-                            <div className="range__button button_transpared button">
+                            <Link className="range__button button_transpared button" to="/all-products/">
                                 {
                                     text.rangeSecondButton[language as keyof ITextItem]
                                 }
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="range__carousel">

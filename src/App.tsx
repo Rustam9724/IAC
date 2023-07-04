@@ -2,9 +2,9 @@ import Footer from "./components/Footer";
 import { Header } from "./components/Header";
 import Main from "./components/Main";
 import { useContext } from "react";
-
 import { SiteContext } from './context';
-import ModalForm from "./components/ModalForm";
+import AllProducts from './components/AllProducts';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const {isModalForm, setIsModalForm, setIsModalVideo, isModalVideo} = useContext(SiteContext);
@@ -30,7 +30,12 @@ function App() {
       <div className='wrapper'>
         <div className={`substrate ${isModalForm || isModalVideo ? 'active' : null}`} onClick={closeModal}></div>
           <Header />
-          <Main />
+          <Router basename="/">
+            <Routes>
+              <Route path="/" element={<Main />}/>
+              <Route path="/all-products/" element={<AllProducts />}/>
+            </Routes>
+          </Router>
           <Footer />
       </div>
   );
