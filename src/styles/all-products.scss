@@ -10,14 +10,17 @@
             color: white;
             line-height: 150%;
             font-weight: 400;
+            overflow: hidden;
             
             .categories__first-level {
+                position: relative;
                 padding: 12px;
                 display: flex;
                 background-color: $accent-color;
                 column-gap: 12px;
                 align-items: center;
                 cursor: pointer;
+                z-index: 2;
 
                 &:hover {
                     background-color: #005c39;
@@ -31,6 +34,15 @@
                     width: 23px;
                     height: 13px;
                     background-image: url("../../public/assets/all-products/arrow.svg");
+                    transform: rotate(180deg);
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &.open {
+
+                    div {
+                        transform: unset;
+                    }
                 }
             }
 
@@ -41,6 +53,15 @@
                 border-top: 1px solid $secondary-text-color;
                 align-items: center;
                 column-gap: 22px;
+                margin-top: -39px;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+                position: relative;
+                z-index: 1;
+
+                &:hover {
+                    background-color: #131313;
+                }
 
                 p {
                     font-size: 1.6rem;
@@ -52,17 +73,38 @@
                     background-image: url("../../public/assets/all-products/arrow.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
+                    transform: rotate(180deg);
+                    transition: all 0.5s ease-in-out;
+
+                    &.open {
+                        transform: unset;
+                    }
+                }
+
+                &.open {
+                    margin-top: 0;
                 }
             }
 
             .categories__third-level {
                 background-color: $text-color;
+                margin-top: -152px;
+                transition: all 0.5s ease-in-out;
+
+                &.open {
+                    margin-top: 0;
+                }
                 
                 p {
                     border-top: 1px solid $secondary-text-color;
                     padding: 11px 0;
                     text-align: center;
                     font-size: 1.6rem;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        background-color: #131313;
+                    }
                 }
             }
         }
