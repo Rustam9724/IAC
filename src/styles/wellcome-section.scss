@@ -1,3 +1,21 @@
+@keyframes firstEllipsAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes secondEllipsAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.15;
+    }
+}
+
 .wellcome-section {
     padding: 16px 0 176px;
 
@@ -104,6 +122,32 @@
                         width: 43px;
                         height: 45px;
                     }
+                }
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+
+                ellipse {
+
+                    &:nth-child(2) {
+                        animation: firstEllipsAnimation 1.5s ease alternate infinite;
+                    }
+
+                    &:first-child {
+                        animation: secondEllipsAnimation 1.5s alternate infinite;
+                    }
+                }
+            }
+
+            @media (max-width: 399px) {
+                svg {
+                    width: 43px;
+                    height: 45px;
                 }
             }
         }
