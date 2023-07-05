@@ -30,6 +30,18 @@
             display: flex;
             justify-content: space-between;
 
+            ._ibg {
+                
+                &:hover {
+                    overflow: hidden;
+                    
+                    img {
+                        transition: all 0.25s ease-in;
+                        width: 110%;
+                    }
+                }
+            }
+
             .exhibitions_left {
                 display: flex;
                 flex-direction: column;
