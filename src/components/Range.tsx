@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { SiteContext } from '../context';
 import text from './text';
 import { ITextItem } from './text';
@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 function Range() {
     const {language, setIsModalForm} = useContext(SiteContext);
+    const picturesArr = ['first', 'second', 'third', 'fourth', 'fifth'];
+    const [pictureShown, setPictureShown] = useState(0)
 
     function modalOpen() {
         const body = document.querySelector('body')
@@ -17,6 +19,18 @@ function Range() {
             modalForm.style.top = '20px';
             modalForm.style.transition = '1s ease';
             setIsModalForm(true);
+        }
+    }
+
+    function flipping(side: string) {
+        if (side === 'right') {
+            if (pictureShown < 4) {
+                setPictureShown(pictureShown + 1)
+            }
+        } else if (side === 'left') {
+            if (pictureShown > 0) {
+                setPictureShown(pictureShown - 1);
+            }
         }
     }
 
@@ -65,47 +79,51 @@ function Range() {
                             </Link>
                         </div>
                     </div>
-                    <div className="range__carousel">
-                        <div className="range__carousel__item">
-                            <img src="./assets/range/product_1.jpg" alt="product"/>
+                        <div className={`range__carousel ${picturesArr[pictureShown]}-position`}>
+                            <div className="range__carousel__item _ibg">
+                                <img src="./assets/range/product_1.jpg" alt="product"/>
+                            </div>
+                            <div className="range__carousel__item _ibg">
+                                <img src="./assets/range/product_2.jpg" alt="product"/>
+                            </div>
+                            <div className="range__carousel__item _ibg">
+                                <img src="./assets/range/product_1.jpg" alt="product"/>
+                            </div>
+                            <div className="range__carousel__item _ibg">
+                                <img src="./assets/range/product_2.jpg" alt="product"/>
+                            </div>
+                            <div className="range__carousel__item _ibg">
+                                <img src="./assets/range/product_1.jpg" alt="product"/>
+                            </div>
                         </div>
-                        <div className="range__carousel__item">
-                            <img src="./assets/range/product_2.jpg" alt="product"/>
-                        </div>
-                        <div className="range__carousel__item">
-                            <img src="./assets/range/product_1.jpg" alt="product"/>
-                        </div>
-                        <div className="range__carousel__item">
-                            <img src="./assets/range/product_2.jpg" alt="product"/>
-                        </div>
-                        <div className="range__carousel__item">
-                            <img src="./assets/range/product_1.jpg" alt="product"/>
-                        </div>
-                    </div>
                 </div>
                 <div className="range__switcher switcher-range">
                     <div className="range__arrows">
-                        <svg className="switcher-range__arrow" width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.4">
-                        <rect width="37.8391" height="1.8948" transform="matrix(-1 0 0 1 39.999 12.4209)" fill="#00814F"/>
-                        <rect width="18.9338" height="1.89338" transform="matrix(-0.706576 -0.707637 -0.706576 0.707637 14.7158 25.561)" fill="#00814F"/>
-                        <rect width="18.9338" height="1.89338" transform="matrix(0.706576 -0.707637 -0.706576 -0.707637 1.33789 14.8423)" fill="#00814F"/>
-                        </g>
-                    </svg>
-                        <svg className="switcher-range__arrow switcher-range__arrow_active" width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.4">
-                        <rect width="37.8391" height="1.8948" transform="matrix(-1 0 0 1 39.999 12.4209)" fill="#00814F"/>
-                        <rect width="18.9338" height="1.89338" transform="matrix(-0.706576 -0.707637 -0.706576 0.707637 14.7158 25.561)" fill="#00814F"/>
-                        <rect width="18.9338" height="1.89338" transform="matrix(0.706576 -0.707637 -0.706576 -0.707637 1.33789 14.8423)" fill="#00814F"/>
-                        </g>
-                    </svg>
+                        <svg className={`switcher-range__arrow ${pictureShown > 0 ? 'active' : null}`} width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            onClick={() => flipping('left')}
+                        >
+                            <g opacity="0.4">
+                            <rect width="37.8391" height="1.8948" transform="matrix(-1 0 0 1 39.999 12.4209)" fill="#00814F"/>
+                            <rect width="18.9338" height="1.89338" transform="matrix(-0.706576 -0.707637 -0.706576 0.707637 14.7158 25.561)" fill="#00814F"/>
+                            <rect width="18.9338" height="1.89338" transform="matrix(0.706576 -0.707637 -0.706576 -0.707637 1.33789 14.8423)" fill="#00814F"/>
+                            </g>
+                        </svg>
+                        <svg className={`switcher-range__arrow ${pictureShown < 4 ? 'active' : null}`} width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            onClick={() => flipping('right')}
+                        >
+                            <g opacity="0.4">
+                            <rect width="37.8391" height="1.8948" transform="matrix(-1 0 0 1 39.999 12.4209)" fill="#00814F"/>
+                            <rect width="18.9338" height="1.89338" transform="matrix(-0.706576 -0.707637 -0.706576 0.707637 14.7158 25.561)" fill="#00814F"/>
+                            <rect width="18.9338" height="1.89338" transform="matrix(0.706576 -0.707637 -0.706576 -0.707637 1.33789 14.8423)" fill="#00814F"/>
+                            </g>
+                        </svg>
                     </div>
                     <div className="switcher-range__scale">
-                        <div className="switcher-range__scale__item switcher-range__scale__item_active"></div>
-                        <div className="switcher-range__scale__item"></div>
-                        <div className="switcher-range__scale__item"></div>
-                        <div className="switcher-range__scale__item"></div>
-                        <div className="switcher-range__scale__item"></div>
+                        <div className={`switcher-range__scale__item ${pictureShown === 0 ? 'active' : null}`}></div>
+                        <div className={`switcher-range__scale__item ${pictureShown === 1 ? 'active' : null}`}></div>
+                        <div className={`switcher-range__scale__item ${pictureShown === 2 ? 'active' : null}`}></div>
+                        <div className={`switcher-range__scale__item ${pictureShown === 3 ? 'active' : null}`}></div>
+                        <div className={`switcher-range__scale__item ${pictureShown === 4 ? 'active' : null}`}></div>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import Exhibitions from "./Exhibitions";
 import UnderFooter from "./UnderFooter";
 import ModalForm from "./ModalForm";
 import ModalVideo from "./ModalVideo";
+import BurgerMenu from "./BurgerMenu";
 
 function Main() {
 

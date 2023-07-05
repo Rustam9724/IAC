@@ -73,9 +73,7 @@ export function Header() {
                     </div>
                 </div>
             </div>
-            {
-                <BurgerMenu/>
-            }
+            <BurgerMenu/>
         </header> 
     )
 }

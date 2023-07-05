@@ -6,12 +6,16 @@ import text from './text';
 function Stages() {
     const {language, setIsModalForm } = useContext(SiteContext);
 
-    function openModalForm() {
-        setIsModalForm(true);
+    function modalOpen() {
         const body = document.querySelector('body')
-        if (body) {
+        const modalForm: HTMLDivElement | null = document.querySelector('.modal-form');
+        if (body && modalForm) {
             body.style.height = '100vh';
             body.style.overflow = 'hidden';
+            body.style.marginRight = '16px';
+            modalForm.style.top = '20px';
+            modalForm.style.transition = '1s ease';
+            setIsModalForm(true);
         }
     }
 
@@ -269,7 +273,7 @@ function Stages() {
                                     text.stagesGetStartText[language as keyof ITextItem]
                                 }
                             </p>
-                            <button className="stages__button button" onClick={openModalForm}>
+                            <button className="stages__button button" onClick={modalOpen}>
                                 {
                                     text.stagesButton[language as keyof ITextItem]
                                 }

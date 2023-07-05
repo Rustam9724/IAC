@@ -106,30 +106,165 @@
                 }
             }
 
-            .range__carousel {
-                display: flex;
-                column-gap: 30px;
 
-                @media (max-width: 1149px) {
-                    .range__carousel__item img {
-                        width: 516/1920 * 100vw;
-                        aspect-ratio: 516/451;
-                    }
-                }
-
-                @media (max-width: 574px) {
-                    .range__carousel__item img {
-                        width: 136/320 * 100vw;
-                        aspect-ratio: 136/119;
-                    }
-                }
-            }
-
-            @media (max-width: 1149px) {
                 .range__carousel {
-                    margin-left: 900/1920 * 100vw;
-                }  
-            }
+                    display: flex;
+                    column-gap: 30px;
+                    overflow: hidden;
+
+                    .range__carousel__item {
+                        width: 516px;
+                        aspect-ratio: 516/451;
+                        transition: all 0.5s ease-in;
+                    }
+                    
+                    &.second-position {
+                        
+                        .range__carousel__item:first-child {
+                            margin-left: -546px;
+                        }
+                    }
+                    
+                    &.third-position {
+                        
+                        .range__carousel__item:first-child {
+                            margin-left: -1092px;
+                        }
+                    }
+                    
+                    &.fourth-position {
+
+                        .range__carousel__item:first-child {
+                            margin-left: -1638px;
+                        }
+                    }
+                    
+                    &.fifth-position {
+
+                        .range__carousel__item:first-child {
+                            margin-left: -2184px;
+                        }
+                    }
+                    
+                    
+                }
+    
+                @media (max-width: 1309px) {
+                    .range__carousel {
+                        column-gap: 30/1310 * 100vw;
+
+                        &.second-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -42vw;
+                            }
+                        }
+    
+                        &.third-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -84vw;
+                            }
+                        }
+    
+                        &.fourth-position {
+                            .range__carousel__item:first-child {
+                                margin-left: -126vw;
+                            }
+                        }
+                        
+                        &.fifth-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: 0vw;
+                            }
+                        }
+    
+                        .range__carousel__item {
+                            width: 516/1310 * 100vw;
+                        }
+    
+                    }
+                }
+    
+                @media (max-width: 1149px) {
+                    .range__carousel {
+                        min-width: 100vw;
+
+                        .range__carousel__item:first-child {
+                            margin-left: 106vw;
+                        }
+
+                        &.second-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: 23vw;
+                            }
+                        }
+    
+                        &.third-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -60vw;
+                            }
+                        }
+    
+                        &.fourth-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -125vw;
+                            }
+                        }
+    
+                        &.fifth-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -167vw;
+                            }
+                        }
+                    }
+                }
+    
+                @media (max-width: 767px) {
+                    .range__carousel {
+
+                        .range__carousel__item:first-child {
+                            margin-left: 122vw;
+                        }
+
+                        &.second-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: 32vw;
+                            }
+                        }
+    
+                        &.third-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -58vw;
+                            }
+                        }
+    
+                        &.fourth-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -135vw;
+                            }
+                        }
+    
+                        &.fifth-position {
+
+                            .range__carousel__item:first-child {
+                                margin-left: -179vw;
+                            }
+                        }
+    
+                        .range__carousel__item {
+                            width: 136/320 * 100vw;
+                        }
+                    }
+                }
         }
 
         @media (max-width: 1149px) {
@@ -159,7 +294,7 @@
                     transform: rotate(180deg);
                 }
 
-                .switcher-range__arrow_active {
+                .switcher-range__arrow.active {
                     cursor: pointer;
 
                     g {
@@ -176,13 +311,14 @@
                 width: 1062px;
                 background-color: #c4c4c4;
                 display: flex;
-
+                
                 .switcher-range__scale__item {
+                    transition: all 0.5s ease;
                     height: 100%;
                     flex: 0 0 20%;
                 }
 
-                .switcher-range__scale__item_active {
+                .switcher-range__scale__item.active {
                     background-color: $accent-color;
                 }
             }
