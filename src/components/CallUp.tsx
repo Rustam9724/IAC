@@ -43,7 +43,7 @@ function CallUp() {
                                 text.callUpName[language as keyof ITextItem]
                             }
                         </p>
-                        <input type="text" placeholder={language === 'ru' ? 'Фамилия Имя' : 'Full name'}/>
+                        <input type="text" placeholder={language === 'ru' ? 'Фамилия Имя' : 'Full name'} required/>
                     </label>
                     <label>
                         <p>
@@ -51,7 +51,7 @@ function CallUp() {
                                 text.callUpPhone[language as keyof ITextItem]
                             }
                         </p>
-                        <input type="phone"/>
+                        <input type="phone" required/>
                     </label>
                 </div>
                 <div className="call-up__form__time time-form">
