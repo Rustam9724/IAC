@@ -188,13 +188,45 @@ const text: IText = {
         ru: 'На фото:',
         en: 'On the picture:',
     },
-    employerName: {
+    employerfirstName: {
         ru: 'Павел Охлобыстин',
         en: 'Pavel Okhlobystin',
     },
-    employersJobTitle: {
+    employersecondName: {
+        ru: 'Юлий Мадленов',
+        en: 'Julius Madelenov',
+    },
+    employerthirdName: {
+        ru: 'Рушан Марианов',
+        en: 'Rushan Marianov',
+    },
+    employerfourthName: {
+        ru: 'Трифон Искандеров',
+        en: 'Trifon Iskanderov',
+    },
+    employerfifthName: {
+        ru: 'Тамерлан Витальев',
+        en: 'Tamerlan Vitaliev',
+    },
+    employersfirstJobTitle: {
         ru: 'Монтажник компрессорного оборудования',
         en: 'Compressor equipment installer',
+    },
+    employerssecondJobTitle: {
+        ru: 'Слесарь-ремонтик оборудования',
+        en: 'Equipment repairman',
+    },
+    employersthirdJobTitle: {
+        ru: 'Оператор конвейерной линии',
+        en: 'Conveyor line operator',
+    },
+    employersfourthJobTitle: {
+        ru: 'Водитель грузовых автомобилей',
+        en: 'Truck driver',
+    },
+    employersfifthJobTitle: {
+        ru: 'Тестировщик оборудования',
+        en: 'Equipment tester',
     },
     FAQTitle: {
         ru: 'Часто задаваемые вопросы',

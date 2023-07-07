@@ -9,30 +9,85 @@
 
             .employers__carousel {
                 width: 625/1280 * 100%;
+                position: relative;
                 
-                .employers__image {
-                    width: 100%;
+                .employers__images {
+                    display: flex;
+                    overflow: hidden;
+                    column-gap: 31/625 * 100%;
                     aspect-ratio: 1;
                     margin-bottom: 30px;
                     position: relative;
-    
-                    img,
-                    div {
+                    z-index: 1;
+
+                    &.first-position {
+
+                        img:first-child {
+                            opacity: 1;
+                        }
+                    }
+
+                    &.second-position {
+
+                        img:first-child {
+                            margin-left: -627px;
+                        }
+
+                        img:nth-child(2) {
+                            opacity: 1;
+                        }
+                    }
+
+                    &.third-position {
+
+                        img:first-child {
+                            margin-left: -1253px;
+                        }
+
+                        img:nth-child(3) {
+                            opacity: 1;
+                        }
+                    }
+
+                    &.fourth-position {
+
+                        img:first-child {
+                            margin-left: -1879px;
+                        }
+
+                        img:nth-child(4) {
+                            opacity: 1;
+                        }
+                    }
+
+                    &.fifth-position {
+
+                        img:first-child {
+                            margin-left: -2505px;
+                        }
+
+                        img:nth-child(5) {
+                            opacity: 1;
+                        }
+                    }
+
+                    img {
                         width: 596/625 * 100%;
                         aspect-ratio: 1;
-                    }
-    
-                    img {
+                        margin-bottom: 30px;
                         position: relative;
-                        z-index: 1;
+                        transition: all 0.5s ease;
+                        opacity: 0;
                     }
-    
-                    div {
-                        background-color: #363636;
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                    }
+                }
+
+                .employers__carousel__substrate {
+                    position: absolute;
+                    top: 29/625 * 100%;
+                    right: 0;
+                    width: 596/625 * 100%;
+                    aspect-ratio: 1;
+                    background-color: #363636;
                 }
 
                 .switcher-employers {
@@ -51,7 +106,7 @@
                                 transform: rotate(180deg);
                             }
         
-                            &.switcher-employers__arrow_active {
+                            &.active {
                                 g {
                                     opacity: 1;
                                 }
@@ -73,7 +128,7 @@
                             height: 100%;
                             cursor: pointer;
         
-                            &.switcher-employers__scale__item_active {
+                            &.active {
                                 background-color: $accent-color;
                             }
                         }
