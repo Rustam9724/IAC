@@ -30,7 +30,7 @@ function App() {
       <div className='wrapper'>
         <div className={`substrate ${isModalForm || isModalVideo ? 'active' : null}`} onClick={closeModal}></div>
           <Header />
-          <Router basename="/">
+          <Router basename="/IAC">
             <Routes>
               <Route path="/" element={<Main />}/>
               <Route path="/all-products/" element={<AllProducts />}/>

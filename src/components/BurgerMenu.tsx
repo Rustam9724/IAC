@@ -18,22 +18,22 @@ function BurgerMenu() {
             <nav className="burger-menu__nav">
                 <ul className="burger-menu__list">
                     <li className="burger-menu__item">
-                        <a href="/#wellcome-section" onClick={burgerMenuClose}>О нас</a>
+                        <a href="/IAC/#wellcome-section" onClick={burgerMenuClose}>О нас</a>
                     </li>
                     <li className="burger-menu__item">
-                        <a href="/#range__title" onClick={burgerMenuClose}>Товары</a>
+                        <a href="/IAC/#range__title" onClick={burgerMenuClose}>Товары</a>
                     </li>
                     <li className="burger-menu__item">
-                        <a href="/#clients__container" onClick={burgerMenuClose}>Нам доверяют</a>
+                        <a href="/IAC/#clients__container" onClick={burgerMenuClose}>Нам доверяют</a>
                     </li>
                     <li className="burger-menu__item">
-                        <a href="/#employers__container" onClick={burgerMenuClose}>Команда</a>
+                        <a href="/IAC/#employers__container" onClick={burgerMenuClose}>Команда</a>
                     </li>
                     <li className="burger-menu__item">
-                        <a href="/#FAQ" onClick={burgerMenuClose}>FAQ</a>
+                        <a href="/IAC/#FAQ" onClick={burgerMenuClose}>FAQ</a>
                     </li>
                     <li className="burger-menu__item">
-                        <a href="/#footer" onClick={burgerMenuClose}>Контакты</a>
+                        <a href="/IAC/#footer" onClick={burgerMenuClose}>Контакты</a>
                     </li>
                 </ul>
             </nav>

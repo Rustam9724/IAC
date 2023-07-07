@@ -41,22 +41,22 @@ function Clients() {
                 </div>
                 <div className="clients__items">
                     <div className="clients__item">
-                        <img src="/assets/clients/agromir.jpg" alt="agromir" />
+                        <img src="./assets/clients/agromir.jpg" alt="agromir" />
                     </div>
                     <div className="clients__item">
-                        <img src="/assets/clients/pepsi.jpg" alt="pepsi" />
+                        <img src="./assets/clients/pepsi.jpg" alt="pepsi" />
                     </div>
                     <div className="clients__item">
-                        <img src="/assets/clients/foodagro.jpg" alt="foodagro" />
+                        <img src="./assets/clients/foodagro.jpg" alt="foodagro" />
                     </div>
                     <div className="clients__item">
-                        <img src="/assets/clients/marinelle.jpg" alt="marinelle" />
+                        <img src="./assets/clients/marinelle.jpg" alt="marinelle" />
                     </div>
                     <div className="clients__item">
-                        <img src="/assets/clients/foodagro.jpg" alt="foodagro" />
+                        <img src="./assets/clients/foodagro.jpg" alt="foodagro" />
                     </div>
                     <div className="clients__item">
-                        <img src="/assets/clients/marinelle.jpg" alt="marinelle" />
+                        <img src="./assets/clients/marinelle.jpg" alt="marinelle" />
                     </div>
                 </div>
             </div>

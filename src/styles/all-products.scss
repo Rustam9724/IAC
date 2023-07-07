@@ -133,19 +133,23 @@
                 justify-content: space-between;
                 row-gap: 30px;
 
-                .produtcs__item {
+                .products__item {
                     flex: 0 1 31%;
                     aspect-ratio: 297/260;
+                    background-image: url("../../public/assets/all-products/01.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
                 }
 
                 @media (max-width: 1049px) {
-                    .produtcs__item {
+                    .products__item {
                         flex: 0 1 45%;
                     }
                 }
 
                 @media (max-width: 767px) {
-                    .produtcs__item {
+                    .products__item {
                         flex: 0 1 100%;
                     }
                 }

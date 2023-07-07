@@ -26,11 +26,11 @@ function Employers() {
                 <div className="employers__body">
                     <div className='employers__carousel'>
                         <div className={`employers__images ${picturesArr[pictureShown]}-position`}>
-                            <img src="/assets/employers/employer.jpg" alt="first-employer" />
-                            <img src="/assets/employers/employer.jpg" alt="second-employer" />
-                            <img src="/assets/employers/employer.jpg" alt="third-employer" />
-                            <img src="/assets/employers/employer.jpg" alt="fourth-employer" />
-                            <img src="/assets/employers/employer.jpg" alt="fifth-employer" />
+                            <img src="./assets/employers/employer.jpg" alt="first-employer" />
+                            <img src="./assets/employers/employer.jpg" alt="second-employer" />
+                            <img src="./assets/employers/employer.jpg" alt="third-employer" />
+                            <img src="./assets/employers/employer.jpg" alt="fourth-employer" />
+                            <img src="./assets/employers/employer.jpg" alt="fifth-employer" />
                         </div>
                         <div className="employers__carousel__substrate"></div>
                         <div className="employers__switcher switcher-employers">

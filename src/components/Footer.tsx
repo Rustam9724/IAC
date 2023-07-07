@@ -10,7 +10,7 @@ function Footer() {
         <footer className="footer" id="footer">
             <div className="footer__container _container">
                 <div className="footer__logo _ibg">
-                    <img src="/assets/footer/logo.svg" alt="logo" />
+                    <img src="./assets/footer/Logo.svg" alt="logo" />
                 </div>
                 <div className="footer__contacts">
                     <h2>

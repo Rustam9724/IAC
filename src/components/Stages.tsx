@@ -31,7 +31,7 @@ function Stages() {
                     <div className="stages__body__row">
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/01.svg" alt="" />
+                                <img src="./assets/stages/01.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -57,7 +57,7 @@ function Stages() {
                         </div>
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/02.svg" alt="" />
+                                <img src="./assets/stages/02.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -85,7 +85,7 @@ function Stages() {
                     <div className="stages__body__row stages__body__row_reverse">
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/03.svg" alt="" />
+                                <img src="./assets/stages/03.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -111,7 +111,7 @@ function Stages() {
                         </div>
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/04.svg" alt="" />
+                                <img src="./assets/stages/04.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -139,7 +139,7 @@ function Stages() {
                     <div className="stages__body__row">
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/05.svg" alt="" />
+                                <img src="./assets/stages/05.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -165,7 +165,7 @@ function Stages() {
                         </div>
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/06.svg" alt="" />
+                                <img src="./assets/stages/06.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -193,7 +193,7 @@ function Stages() {
                     <div className="stages__body__row stages__body__row_reverse">
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/07.svg" alt="" />
+                                <img src="./assets/stages/07.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -219,7 +219,7 @@ function Stages() {
                         </div>
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/08.svg" alt="" />
+                                <img src="./assets/stages/08.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>
@@ -247,7 +247,7 @@ function Stages() {
                     <div className="stages__body__row">
                         <div className="stages__stage stage">
                             <div className="stage__image">
-                                <img src="/assets/stages/09.svg" alt="" />
+                                <img src="./assets/stages/09.svg" alt="" />
                             </div>
                             <div className="stage__description">
                                 <h3>

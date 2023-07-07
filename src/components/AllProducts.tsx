@@ -33,33 +33,15 @@ function AllProducts() {
                     <h2>Всё оборудование</h2>
                     <hr />
                     <div className="all-products__products products">
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/01.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/02.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/03.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/03.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/01.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/02.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/02.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/03.jpg" alt="" />
-                        </div>
-                        <div className="produtcs__item _ibg">
-                            <img src="/assets/all-products/01.jpg" alt="" />
-                        </div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
+                        <div className="products__item"></div>
                     </div>
                 </div>
             </div>
