@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/IAC/static/css/main.64860039.css",
-    "main.js": "/IAC/static/js/main.ae68f4cb.js",
+    "main.js": "/IAC/static/js/main.d8a551fe.js",
     "static/media/Nirmala-ui.otf": "/IAC/static/media/Nirmala-ui.5a41e5d816b8aee215a7.otf",
     "static/media/MinionPro-Regular.otf": "/IAC/static/media/MinionPro-Regular.8fd850ed741e8de5f7e5.otf",
     "static/media/background.jpg": "/IAC/static/media/background.37936373b4ee57945b7f.jpg",
     "index.html": "/IAC/index.html",
     "static/media/arrow.svg": "/IAC/static/media/arrow.cb521e2e8eb4e17bd84b.svg",
     "main.64860039.css.map": "/IAC/static/css/main.64860039.css.map",
-    "main.ae68f4cb.js.map": "/IAC/static/js/main.ae68f4cb.js.map"
+    "main.d8a551fe.js.map": "/IAC/static/js/main.d8a551fe.js.map"
   },
   "entrypoints": [
     "static/css/main.64860039.css",
-    "static/js/main.ae68f4cb.js"
+    "static/js/main.d8a551fe.js"
   ]
 }
