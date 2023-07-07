@@ -9,7 +9,6 @@ function Employers() {
     const [pictureShown, setPictureShown] = useState(0);
 
     function flipping(side: string) {
-        console.log('Hi')
         if (side === 'right') {
             if (pictureShown < 4) {
                 setPictureShown(pictureShown + 1)

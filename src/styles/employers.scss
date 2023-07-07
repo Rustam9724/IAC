@@ -81,6 +81,39 @@
                     }
                 }
 
+                @media (max-width: 1309px) {
+                    .employers__images {
+    
+                        &.second-position {
+    
+                            img:first-child {
+                                margin-left: -99%;
+                            }
+                        }
+    
+                        &.third-position {
+    
+                            img:first-child {
+                                margin-left: -198%;
+                            }
+                        }
+    
+                        &.fourth-position {
+    
+                            img:first-child {
+                                margin-left: -297%;
+                            }
+                        }
+    
+                        &.fifth-position {
+    
+                            img:first-child {
+                                margin-left: -403%;
+                            }
+                        }
+                    }
+                }
+
                 .employers__carousel__substrate {
                     position: absolute;
                     top: 29/625 * 100%;
