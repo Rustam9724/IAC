@@ -342,7 +342,7 @@ const text: IText = {
     },
     burgerMenuConfidence: {
         ru: 'Нам доверяют',
-        en: 'we are trusted',
+        en: 'We are trusted',
     },
     burgerMenuTeam: {
         ru: 'Комнанда',
@@ -351,7 +351,35 @@ const text: IText = {
     burgerMenuContacts: {
         ru: 'Контакты',
         en: 'Contacts',
-    }
+    },
+    allProductsTitle: {
+        ru: 'Всё оборудование',
+        en: 'All equipment',
+    },
+    allProductsCategoriesFirstLevel: {
+        ru: 'Выбрать Категорию',
+        en: 'Select category',
+    },
+    allProductsCategoriesSecondLevel: {
+        ru: 'Технологические линии',
+        en: 'Technological lines',
+    },
+    allProductsCategoriesThirdLevelFirst: {
+        ru: 'Сушка овощей и фруктов',
+        en: 'Drying vegetables and fruits',
+    },
+    allProductsCategoriesThirdLevelSecond: {
+        ru: 'Консервирование грибов',
+        en: 'Mushroom canning',
+    },
+    allProductsCategoriesThirdLevelThird: {
+        ru: 'Сушка абрикосов',
+        en: 'Drying apricots',
+    },
+    allProductsCategoriesThirdLevelFourth: {
+        ru: 'Переработка овощей',
+        en: 'Vegetable processing',
+    } 
 }
 
 export default text;
