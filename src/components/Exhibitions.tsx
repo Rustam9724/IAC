@@ -34,7 +34,7 @@ function Exhibitions() {
                                 <img src="./assets/exhibitions/right_left_top.jpg" alt="" />
                             </div>
                             <div className="exhibitions__right__left__second-image _ibg">
-                                <img src="/assets/exhibitions/right_left_bottom.jpg" alt="" />
+                                <img src="./assets/exhibitions/right_left_bottom.jpg" alt="" />
                             </div>
                         </div>
                         <div className="exhibitions__right__right">

@@ -331,6 +331,26 @@ const text: IText = {
     modalFormButton: {
         ru: 'ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ',
         en: 'GEN AN OFFER'
+    },
+    burgerMenuAboutUs: {
+        ru: 'О нас',
+        en: 'About us',
+    },
+    burgerMenuGoods: {
+        ru: 'Товары',
+        en: 'Goods',
+    },
+    burgerMenuConfidence: {
+        ru: 'Нам доверяют',
+        en: 'we are trusted',
+    },
+    burgerMenuTeam: {
+        ru: 'Комнанда',
+        en: 'Team',
+    },
+    burgerMenuContacts: {
+        ru: 'Контакты',
+        en: 'Contacts',
     }
 }
 
